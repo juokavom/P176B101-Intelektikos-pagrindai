@@ -14,3 +14,4 @@ CONTINUOUS_ANALYSIS_OUTPUT_HEADERS = ['Atributo pavadinimas', 'Kiekis (Eilučių
                                   'Kardinalumas', 'Minimali reikšmė', 'Maksimali reikšmė', '1-asis kvartilis',
                                   '3-asis kvartilis', 'Vidurkis', 'Mediana', 'Standartinis nuokrypis']
 # ----
+PROCESSED_OUTPUT_PATH: str = OUTPUT_FOLDER_NAME + '/apdoroti_duomenys.csv'
