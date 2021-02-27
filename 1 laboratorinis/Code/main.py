@@ -37,6 +37,17 @@ def analyse_continuous_data(data):
     handler.write_to_csv(c.CONTINUOUS_OUTPUT_PATH, csv_list, c.CONTINUOUS_ANALYSIS_OUTPUT_HEADERS)
 
 
+def all_modas(data, values_list):
+    unique_values = list(set(data))
+    value_counts = list(map(lambda x: len(list(filter(lambda y: y == x, data))), unique_values))
+    counts_copy = value_counts.copy()
+    counts_copy.sort()
+    moda_index = value_counts.index(counts_copy.pop()), value_counts.index(counts_copy.pop())
+    for index in moda_index:
+        values_list.append(unique_values[index])
+        values_list.append(value_counts[index])
+        values_list.append(100 * value_counts[index] / len(data))
+
 def analyse_categorical_data(data):
     csv_list = []
     for i in c.CATEGORICAL_DATA_HEADERS:
@@ -47,6 +58,7 @@ def analyse_categorical_data(data):
             '%d' % (len(list(filter(lambda x: x == '', sublist))) / len(sublist)) + '%',  # Trukstamos reiksmes
             len(list(set(sublist)))  # Kardinalumas
         ]
+        all_modas(sublist, values)  # 1-oji ir 2-oji modos su charakteristikomis
         csv_list.append(append_element_to_headers(c.CATEGORICAL_ANALYSIS_OUTPUT_HEADERS, values))
     handler.write_to_csv(c.CATEGORICAL_OUTPUT_PATH, csv_list, c.CATEGORICAL_ANALYSIS_OUTPUT_HEADERS)
 

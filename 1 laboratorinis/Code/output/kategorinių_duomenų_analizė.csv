@@ -1,4 +1,4 @@
 Atributo pavadinimas,Kiekis (Eiluèiø sk.),"Trûkstamos reikðmës, %",Kardinalumas,Moda,Modos daþnumas,"Moda, %",2-oji moda,2-osios Modos daþnumas,"2-oji Moda, %"
-REGION,1000,0%,4,,,,,,
-OS,1000,0%,3,,,,,,
-PROTOCOL,1000,0%,4,,,,,,
+REGION,1000,0%,4,Asia,318,31.8,Africa,295,29.5
+OS,1000,0%,3,Linux,811,81.1,Windows,144,14.4
+PROTOCOL,1000,0%,4,HTTP,964,96.4,FTP,23,2.3
