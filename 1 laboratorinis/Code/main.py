@@ -18,6 +18,7 @@ def append_element_to_headers(headers, values):
 def analyse_continuous_data(data, values):
     csv_list = []
     for i in c.CONTINUOUS_DATA_HEADERS:
+        average = np.average
         sublist = list(map(lambda x: int(x[i]), data))
         sublist.sort()
         values[i].append(min(sublist))  # Minimali reikšmė
@@ -59,7 +60,7 @@ def analyze_initial_values(data, headers):
         values[i] = [
             i,  # Atributo pavadinimas
             len(sublist),  # Eilučių kiekis
-            '%d' % (len(list(filter(lambda x: x == '', sublist))) / len(sublist)) + '%',  # Trūkstamos reikšmės
+            len(list(filter(lambda x: x == '', sublist))) / len(sublist),  # Trūkstamos reikšmės
             len(list(set(sublist))),  # Kardinalumas
         ]
     return values
@@ -74,9 +75,21 @@ def horizontal_removal(data, remove_step):
                   100 * remove_step, '%), todėl eilutė PAŠALINAMA.')
 
 
-def handle_missing_values(data, continuous, categorical):
-    horizontal_removal(data, 0.6)  # Horizontalus salinimas (jei 60% eilutes tuscia)
-    print(len(data))
+def vertical_removal(data, continuous, continuous_headers, categorical, categorical_headers, remove_step):
+    for cont in continuous_headers:
+        if float(continuous[cont][2]) >= remove_step:
+            for i in data:
+                del i[cont]
+            print('Atributo: ', continuous[cont][0], '\ntuščiosios reikšmės viršija nustatytą limitą (',
+                  100 * remove_step, '%), todėl atributas PAŠALINAMAS.')
+            del continuous[cont]
+
+
+def handle_missing_values(data, continuous, continuous_headers, categorical, categorical_headers):
+    horizontal_removal(data, 0.6)  # Horizontalus šalinimas (jei 60% eilutės tuščia)
+    vertical_removal(data, continuous, continuous_headers, categorical, categorical_headers,
+                     0.1)  # Vertikalus šalinimas (jei 60% stulpelio tuščia)
+    print(data)
 
 
 # Nuskaitomas duomenų failas
@@ -88,9 +101,10 @@ continuous = analyze_initial_values(dataset, c.CONTINUOUS_DATA_HEADERS)
 # Apdorojamos pradinės kategorinių charakteristikos
 categorical = analyze_initial_values(dataset, c.CATEGORICAL_DATA_HEADERS)
 
-handle_missing_values(dataset, continuous, categorical)
+handle_missing_values(dataset, continuous, c.CONTINUOUS_DATA_HEADERS,
+                      categorical, c.CATEGORICAL_DATA_HEADERS)
 
-# # Apdorojamos likusios tolydžiųjų charakteristikos
+# Apdorojamos likusios tolydžiųjų charakteristikos
 # continuous_dict_list = analyse_continuous_data(dataset, continuous)
 # # Apdorojamos likusios kategorinių charakteristikos
 # categorical_dict_list = analyse_categorical_data(dataset, categorical)
