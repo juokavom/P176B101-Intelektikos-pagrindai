@@ -2,38 +2,34 @@
 # Jokubas Akramas IFF-8/12
 # 1 laboratorinis darbas
 # P176B101 Intelektikos pagrindai 2021
-import csv
-import errno
-import os
 import constants as c
+import handler
 
 
-def create_package_if_no_exist(path):
-    try:
-        os.makedirs(path)
-        print("Output folder created at: ",
-              os.path.dirname(os.path.realpath(path)))
-    except OSError as e:
-        if e.errno != errno.EEXIST:
-            raise
+def append_element_to_headers(headers, values):
+    element = {}
+    for i in range(len(values)):
+        element[headers[i]] = values[i]
+    return element
 
 
-def csv_to_dict_list(path):
-    with open(path, newline='') as csvfile:
-        reader = csv.DictReader(csvfile)
-        fields = reader.fieldnames
-        list_out = [row for row in reader]
-        return list_out, fields
+def analyse_continuous_data(data):
+    csv_list = []
+    for i in c.CONTINUOUS_DATA_HEADERS:
+        values = [i, len(data)]
+        csv_list.append(append_element_to_headers(c.CONTINUOUS_ANALYSIS_OUTPUT_HEADERS, values))
+    handler.write_to_csv(c.CONTINUOUS_OUTPUT_PATH, csv_list, c.CONTINUOUS_ANALYSIS_OUTPUT_HEADERS)
 
 
-def write_to_csv(path, items, header_fields):
-    with open(path, 'w', newline='') as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=header_fields)
-        writer.writeheader()
-        for row in items:
-            writer.writerow(row)
+def analyse_categorical_data(data):
+    csv_list = []
+    for i in c.CATEGORICAL_DATA_HEADERS:
+        values = [i, len(data)]
+        csv_list.append(append_element_to_headers(c.CATEGORICAL_ANALYSIS_OUTPUT_HEADERS, values))
+    handler.write_to_csv(c.CATEGORICAL_OUTPUT_PATH, csv_list, c.CATEGORICAL_ANALYSIS_OUTPUT_HEADERS)
 
 
-dataset, fields = csv_to_dict_list(c.DATASET_TRAIN_FILE)
-create_package_if_no_exist(c.OUTPUT_FOLDER_NAME)
-write_to_csv(c.CATEGORICAL_OUTPUT_PATH, [], c.CATEGORICAL_OUTPUT_HEADER_NAMES)
+dataset, fields = handler.csv_to_dict_list(c.DATASET_TRAIN_FILE)
+handler.create_package_if_no_exist(c.OUTPUT_FOLDER_NAME)
+analyse_continuous_data(dataset)
+analyse_categorical_data(dataset)
