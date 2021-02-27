@@ -11,6 +11,6 @@ CATEGORICAL_ANALYSIS_OUTPUT_HEADERS = ['Atributo pavadinimas', 'Kiekis (Eiluči�
                                    '2-osios Modos dažnumas', '2-oji Moda, %']
 CONTINUOUS_OUTPUT_PATH: str = OUTPUT_FOLDER_NAME + "/tolydinių_duomenų_analizė.csv"
 CONTINUOUS_ANALYSIS_OUTPUT_HEADERS = ['Atributo pavadinimas', 'Kiekis (Eilučių sk.)', 'Trūkstamos reikšmės, %',
-                                  'Kardinalumas', 'Minimali reikšmė', '1-asis kvartilis', '3-asis kvartilis',
-                                  'Vidurkis', 'Mediana', 'Standartinis nuokrypis']
+                                  'Kardinalumas', 'Minimali reikšmė', 'Maksimali reikšmė', '1-asis kvartilis',
+                                  '3-asis kvartilis', 'Vidurkis', 'Mediana', 'Standartinis nuokrypis']
 # ----

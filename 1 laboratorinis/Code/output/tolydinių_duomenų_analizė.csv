@@ -1,8 +1,8 @@
-Atributo pavadinimas,Kiekis (Eiluèiø sk.),"Trûkstamos reikðmës, %",Kardinalumas,Minimali reikðmë,1-asis kvartilis,3-asis kvartilis,Vidurkis,Mediana,Standartinis nuokrypis
-X_1,1000,,,,,,,,
-X_2,1000,,,,,,,,
-X_3,1000,,,,,,,,
-X_4,1000,,,,,,,,
-X_5,1000,,,,,,,,
-X_6,1000,,,,,,,,
-X_7,1000,,,,,,,,
+Atributo pavadinimas,Kiekis (Eiluèiø sk.),"Trûkstamos reikðmës, %",Kardinalumas,Minimali reikðmë,Maksimali reikðmë,1-asis kvartilis,3-asis kvartilis,Vidurkis,Mediana,Standartinis nuokrypis
+X_1,1000,0%,47,2,52,,,,,
+X_2,1000,0%,9,0,10,,,,,
+X_3,1000,0%,17,1,18,,,,,
+X_4,1000,0%,17,0,18,,,,,
+X_5,1000,0%,37,0,142,,,,,
+X_6,1000,0%,81,0,330,,,,,
+X_7,1000,0%,40,2,116,,,,,
