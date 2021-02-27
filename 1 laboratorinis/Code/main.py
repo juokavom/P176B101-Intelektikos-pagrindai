@@ -17,15 +17,17 @@ def append_element_to_headers(headers, values):
 
 def analyse_continuous_data(data, values):
     csv_list = []
-    for i in c.CONTINUOUS_DATA_HEADERS:
-        average = np.average
-        sublist = list(map(lambda x: int(x[i]), data))
+    for i in values.keys():
+        sublist = list(map(lambda x: int(x[i]) if x[i] != '' else '', data))
+        average = np.average(list(filter(lambda x: x != '', sublist)))
+        sublist = list(map(lambda x: average if x == '' else x, sublist))
         sublist.sort()
+        values[i][2] = values[i][2] * 1000
         values[i].append(min(sublist))  # Minimali reikšmė
         values[i].append(max(sublist))  # Maksimali reikšmė
         values[i].append(np.quantile(sublist, .25))  # 1-asis kvartilis
         values[i].append(np.quantile(sublist, .75))  # 3-asis kvartilis
-        values[i].append(np.average(sublist))  # Vidurkis
+        values[i].append(average)  # Vidurkis
         values[i].append(np.median(sublist))  # Mediana
         values[i].append(np.std(sublist))  # Standartinis nuokrypis
         csv_list.append(append_element_to_headers(c.CONTINUOUS_ANALYSIS_OUTPUT_HEADERS, values[i]))
@@ -80,7 +82,7 @@ def vertical_removal(data, continuous, continuous_headers, categorical, categori
         if float(continuous[cont][2]) >= remove_step:
             for i in data:
                 del i[cont]
-            print('Atributo: ', continuous[cont][0], '\ntuščiosios reikšmės viršija nustatytą limitą (',
+            print('Atributo: ', continuous[cont][0], 'tuščiosios reikšmės viršija nustatytą limitą (',
                   100 * remove_step, '%), todėl atributas PAŠALINAMAS.')
             del continuous[cont]
 
@@ -89,7 +91,6 @@ def handle_missing_values(data, continuous, continuous_headers, categorical, cat
     horizontal_removal(data, 0.6)  # Horizontalus šalinimas (jei 60% eilutės tuščia)
     vertical_removal(data, continuous, continuous_headers, categorical, categorical_headers,
                      0.1)  # Vertikalus šalinimas (jei 60% stulpelio tuščia)
-    print(data)
 
 
 # Nuskaitomas duomenų failas
@@ -100,17 +101,16 @@ handler.create_package_if_no_exist(c.OUTPUT_FOLDER_NAME)
 continuous = analyze_initial_values(dataset, c.CONTINUOUS_DATA_HEADERS)
 # Apdorojamos pradinės kategorinių charakteristikos
 categorical = analyze_initial_values(dataset, c.CATEGORICAL_DATA_HEADERS)
-
+# Tuščių reikšmių apdorojimas šalinant horizontaliai ir vertikaliai
 handle_missing_values(dataset, continuous, c.CONTINUOUS_DATA_HEADERS,
                       categorical, c.CATEGORICAL_DATA_HEADERS)
-
 # Apdorojamos likusios tolydžiųjų charakteristikos
-# continuous_dict_list = analyse_continuous_data(dataset, continuous)
+continuous_dict_list = analyse_continuous_data(dataset, continuous)
 # # Apdorojamos likusios kategorinių charakteristikos
 # categorical_dict_list = analyse_categorical_data(dataset, categorical)
-# # Išvedama tolydžiųjų duomenų charakteristikų lentelė
-# handler.write_to_csv(c.CONTINUOUS_OUTPUT_PATH, continuous_dict_list,
-#                      c.CONTINUOUS_ANALYSIS_OUTPUT_HEADERS)
+# Išvedama tolydžiųjų duomenų charakteristikų lentelė
+handler.write_to_csv(c.CONTINUOUS_OUTPUT_PATH, continuous_dict_list,
+                     c.CONTINUOUS_ANALYSIS_OUTPUT_HEADERS)
 # # Išvedama kategorinių duomenų charakteristikų lentelė
 # handler.write_to_csv(c.CATEGORICAL_OUTPUT_PATH, categorical_dict_list,
 #                      c.CATEGORICAL_ANALYSIS_OUTPUT_HEADERS)
