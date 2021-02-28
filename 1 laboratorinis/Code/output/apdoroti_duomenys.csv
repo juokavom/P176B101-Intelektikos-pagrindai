@@ -1,6 +1,6 @@
 REGION,OS,PROTOCOL,X_1,X_2,X_3,X_4,X_6,X_7,MALICIOUS_OFFENSE
-Asia,Linux,HTTP,36,2,5,6,174,92,0
-Asia,Windows,HTTP,37,0,11,17,236,103,1
+Asia,Linux,HTTP,36,12.0,5,6,174,92,0
+Asia,Windows,HTTP,37,0,11,14.5,236,103,1
 Asia,Linux,HTTP,3,3,1,0,174,110,1
 Asia,Linux,HTTP,33,2,7,1,249,72,1
 Asia,Linux,HTTP,33,2,8,3,174,112,1
@@ -8,149 +8,149 @@ Asia,Linux,HTTP,45,10,1,0,303,72,1
 Asia,Linux,HTTP,30,7,7,1,174,112,1
 Asia,Linux,HTTP,8,7,9,8,316,72,1
 Asia,Linux,HTTP,49,6,8,3,316,103,1
-Asia,Linux,HTTP,4,6,15,10,145,103,0
-Asia,Linux,HTTP,4,6,15,10,174,103,1
+Asia,Linux,HTTP,4,6,14.5,10,145,103,0
+Asia,Linux,HTTP,4,6,14.5,10,174,103,1
 Asia,Linux,HTTP,33,2,5,6,174,72,1
 Asia,Linux,HTTP,4,6,5,6,174,42,1
-Asia,Linux,HTTP,4,6,15,10,174,18,1
+Asia,Linux,HTTP,4,6,14.5,10,174,25.5,1
 Asia,Linux,HTTP,7,7,2,7,316,72,1
-Asia,Linux,HTTP,36,2,4,4.994305239179955,249,92,1
-Asia,Linux,HTTP,25,9,4,2,0,72,1
-Asia,Linux,HTTP,36,2,1,0,0,92,1
-Asia,Linux,HTTP,37,0,11,17,174,103,1
-Asia,Linux,HTTP,3,3,1,0,249,2,1
-Asia,Linux,HTTP,21,4,5,4.994305239179955,174,18,1
+Asia,Linux,HTTP,36,2,4,5.0,249,92,1
+Asia,Linux,HTTP,25,9,4,2,61.5,72,1
+Asia,Linux,HTTP,36,2,1,0,61.5,92,1
+Asia,Linux,HTTP,37,0,11,14.5,174,103,1
+Asia,Linux,HTTP,3,3,1,0,249,25.5,1
+Asia,Linux,HTTP,21,4,5,5.0,174,25.5,1
 Asia,Linux,HTTP,36,2,1,0,174,92,1
-Asia,Linux,HTTP,47,7,4,4.994305239179955,316,98,1
-Asia,Linux,HTTP,22,7,13,18,316,92,1
+Asia,Linux,HTTP,47,7,4,5.0,316,98,1
+Asia,Linux,HTTP,22,7,13,14.5,316,92,1
 Asia,Linux,HTTP,49,6,5,6,249,67,1
 Asia,Linux,HTTP,4,6,3,5,174,72,1
-Asia,Linux,HTTP,4,6,3,5,0,103,1
+Asia,Linux,HTTP,4,6,3,5,61.5,103,1
 Asia,Linux,HTTP,15,3,4,2,174,116,1
-Africa,Linux,HTTP,36,2,1,4.994305239179955,316,92,1
+Africa,Linux,HTTP,36,2,1,5.0,316,92,1
 Africa,Linux,HTTP,21,4,4,2,174,111,1
-North America,Linux,HTTP,37,0,11,4.994305239179955,127,103,1
+North America,Linux,HTTP,37,0,11,5.0,127,103,1
 Asia,Linux,HTTP,49,6,2,7,249,72,1
 Asia,Linux,HTTP,4,6,7,1,316,72,1
-North America,Linux,HTTP,16,0,8,3,0,12,1
-South America,Linux,HTTP,22,7,16,12,0,34,1
-Africa,Linux,HTTP,36,2,6,4.994305239179955,316,92,1
-North America,Linux,SMTP,37,0,11,17,299,103,1
-South America,Linux,HTTP,11,7,3,5,316,12,1
+North America,Linux,HTTP,16,0,8,3,61.5,25.5,1
+South America,Linux,HTTP,22,7,14.5,12,61.5,34,1
+Africa,Linux,HTTP,36,2,6,5.0,316,92,1
+North America,Linux,SMTP,37,0,11,14.5,299,103,1
+South America,Linux,HTTP,11,7,3,5,316,25.5,1
 Asia,Linux,HTTP,4,6,5,6,174,103,1
 Africa,Linux,HTTP,36,2,1,0,249,92,1
 Africa,Linux,HTTP,36,2,4,2,299,92,1
 Asia,Linux,HTTP,4,6,4,2,249,72,1
-Africa,Windows,HTTP,36,2,15,10,316,92,1
+Africa,Windows,HTTP,36,2,14.5,10,316,92,1
 Africa,Linux,HTTP,48,4,7,1,158,103,0
 Asia,Linux,HTTP,39,6,4,2,249,103,1
-Africa,Linux,HTTP,33,2,9,4.994305239179955,249,103,1
-Africa,Linux,HTTP,21,4,4,4.994305239179955,12,103,0
-North America,Linux,HTTP,16,0,1,4.994305239179955,316,72,1
-Asia,Linux,HTTP,5,3,3,4.994305239179955,249,103,1
-Africa,Linux,HTTP,21,4,2,4.994305239179955,249,2,1
-South America,Linux,HTTP,38,10,3,4.994305239179955,0,72,1
-South America,Linux,HTTP,38,10,7,4.994305239179955,174,103,1
-Asia,Linux,HTTP,4,6,2,4.994305239179955,249,112,1
-Asia,Linux,HTTP,46,3,7,4.994305239179955,74,113,1
-Africa,Linux,HTTP,36,2,1,4.994305239179955,0,92,1
-Asia,Windows,HTTP,4,6,15,10,174,109,1
+Africa,Linux,HTTP,33,2,9,5.0,249,103,1
+Africa,Linux,HTTP,21,4,4,5.0,61.5,103,0
+North America,Linux,HTTP,16,0,1,5.0,316,72,1
+Asia,Linux,HTTP,5,3,3,5.0,249,103,1
+Africa,Linux,HTTP,21,4,2,5.0,249,25.5,1
+South America,Linux,HTTP,38,10,3,5.0,61.5,72,1
+South America,Linux,HTTP,38,10,7,5.0,174,103,1
+Asia,Linux,HTTP,4,6,2,5.0,249,112,1
+Asia,Linux,HTTP,46,3,7,5.0,74,113,1
+Africa,Linux,HTTP,36,2,1,5.0,61.5,92,1
+Asia,Windows,HTTP,4,6,14.5,10,174,109,1
 Africa,Linux,HTTP,33,2,6,4,174,72,1
-South America,Linux,HTTP,22,7,7,1,0,98,1
-South America,Windows,HTTP,22,7,15,10,174,72,1
-Asia,Windows,HTTP,39,6,15,10,249,72,1
-South America,Linux,HTTP,45,10,3,4.994305239179955,249,103,1
-South America,Linux,HTTP,19,1,6,4.994305239179955,249,103,1
-South America,Windows,HTTP,22,7,15,4.994305239179955,303,112,1
-South America,Windows,HTTP,47,7,15,4.994305239179955,174,92,1
+South America,Linux,HTTP,22,7,7,1,61.5,98,1
+South America,Windows,HTTP,22,7,14.5,10,174,72,1
+Asia,Windows,HTTP,39,6,14.5,10,249,72,1
+South America,Linux,HTTP,45,10,3,5.0,249,103,1
+South America,Linux,HTTP,19,1,6,5.0,249,103,1
+South America,Windows,HTTP,22,7,14.5,5.0,303,112,1
+South America,Windows,HTTP,47,7,14.5,5.0,174,92,1
 Asia,Linux,HTTP,3,3,1,0,249,103,1
-North America,Windows,HTTP,18,9,13,18,249,112,1
+North America,Windows,HTTP,18,9,13,14.5,249,112,1
 South America,Linux,HTTP,22,7,2,7,303,72,1
 Asia,Linux,HTTP,35,3,1,0,249,103,1
-South America,Linux,HTTP,47,7,5,6,249,24,1
+South America,Linux,HTTP,47,7,5,6,249,25.5,1
 South America,Linux,HTTP,45,10,8,3,174,112,1
 South America,Mac,HTTP,9,7,9,8,249,103,1
 Asia,Linux,HTTP,15,3,5,6,174,92,1
-Africa,Windows,HTTP,36,2,15,10,174,92,1
+Africa,Windows,HTTP,36,2,14.5,10,174,92,1
 Africa,Linux,HTTP,33,2,7,1,249,103,1
 Asia,Linux,HTTP,49,6,4,2,316,103,1
 South America,Linux,HTTP,2,10,7,1,174,112,1
 South America,Linux,HTTP,45,10,3,5,174,103,1
 Africa,Mac,HTTP,21,4,9,8,174,112,1
-Asia,Linux,HTTP,4,6,2,4.994305239179955,174,72,1
-Africa,Linux,HTTP,36,2,1,4.994305239179955,174,92,1
-Asia,Linux,HTTP,4,6,6,4.994305239179955,174,116,1
-Asia,Linux,HTTP,4,6,6,4.994305239179955,174,18,1
-Africa,Linux,HTTP,21,4,2,4.994305239179955,249,116,1
-Asia,Linux,HTTP,4,6,4,4.994305239179955,316,72,1
-Asia,Linux,FTP,4,6,3,4.994305239179955,249,103,1
-North America,Linux,HTTP,16,0,1,4.994305239179955,249,72,1
-Asia,Linux,HTTP,39,6,5,4.994305239179955,174,103,1
-South America,Linux,HTTP,44,1,2,4.994305239179955,0,34,1
-North America,Linux,HTTP,37,0,3,4.994305239179955,249,98,1
-North America,Linux,HTTP,37,0,4,4.994305239179955,249,103,1
-South America,Mac,HTTP,8,7,18,4.994305239179955,316,98,1
-South America,Linux,HTTP,38,10,6,4.994305239179955,316,98,1
-Africa,Linux,HTTP,36,2,4,4.994305239179955,174,103,1
-North America,Linux,SMTP,24,0,7,4.994305239179955,249,59,1
-Asia,Linux,HTTP,35,3,1,4.994305239179955,249,103,1
-Africa,Linux,HTTP,40,2,5,4.994305239179955,316,103,1
+Asia,Linux,HTTP,4,6,2,5.0,174,72,1
+Africa,Linux,HTTP,36,2,1,5.0,174,92,1
+Asia,Linux,HTTP,4,6,6,5.0,174,116,1
+Asia,Linux,HTTP,4,6,6,5.0,174,25.5,1
+Africa,Linux,HTTP,21,4,2,5.0,249,116,1
+Asia,Linux,HTTP,4,6,4,5.0,316,72,1
+Asia,Linux,FTP,4,6,3,5.0,249,103,1
+North America,Linux,HTTP,16,0,1,5.0,249,72,1
+Asia,Linux,HTTP,39,6,5,5.0,174,103,1
+South America,Linux,HTTP,44,1,2,5.0,61.5,34,1
+North America,Linux,HTTP,37,0,3,5.0,249,98,1
+North America,Linux,HTTP,37,0,4,5.0,249,103,1
+South America,Mac,HTTP,8,7,14.5,5.0,316,98,1
+South America,Linux,HTTP,38,10,6,5.0,316,98,1
+Africa,Linux,HTTP,36,2,4,5.0,174,103,1
+North America,Linux,SMTP,24,0,7,5.0,249,59,1
+Asia,Linux,HTTP,35,3,1,5.0,249,103,1
+Africa,Linux,HTTP,40,2,5,5.0,316,103,1
 North America,Linux,HTTP,37,0,2,7,316,72,1
 South America,Linux,HTTP,8,7,6,4,174,72,1
 North America,Linux,HTTP,17,0,6,4,303,72,1
 Asia,Linux,HTTP,49,6,2,7,174,72,1
 Asia,Mac,HTTP,4,6,9,8,174,112,1
-South America,Windows,HTTP,22,7,15,10,174,103,1
-Asia,Linux,HTTP,4,6,1,0,174,18,1
+South America,Windows,HTTP,22,7,14.5,10,174,103,1
+Asia,Linux,HTTP,4,6,1,0,174,25.5,1
 North America,Linux,HTTP,24,0,4,2,316,72,1
 South America,Mac,HTTP,42,7,9,8,174,92,1
-Asia,Linux,HTTP,5,4.358684480986639,5.941598360655738,4.994305239179955,182.64424057084608,85.03571428571429,1
-South America,Mac,HTTP,9,7,18,13,316,112,1
+Asia,Linux,HTTP,5,7.0,6.0,5.0,183.0,85.0,1
+South America,Mac,HTTP,9,7,14.5,13,316,112,1
 North America,Linux,HTTP,24,0,4,2,316,92,1
 South America,Linux,HTTP,47,7,7,1,174,54,1
 North America,Linux,HTTP,18,9,3,5,174,103,1
 North America,Linux,HTTP,25,9,6,4,316,72,1
-Asia,Linux,HTTP,4,6,1,4.994305239179955,249,98,1
+Asia,Linux,HTTP,4,6,1,5.0,249,98,1
 Africa,Linux,HTTP,41,4,8,3,316,72,1
 North America,Linux,HTTP,37,0,2,7,249,72,1
 Africa,Linux,HTTP,33,2,6,4,174,116,1
-Africa,Windows,HTTP,36,2,11,17,249,92,1
+Africa,Windows,HTTP,36,2,11,14.5,249,92,1
 Africa,Mac,HTTP,21,4,9,8,174,112,1
-South America,Linux,HTTP,7,7,2,7,316,2,1
-North America,Windows,SMTP,25,9,16,12,249,109,1
-Asia,Linux,HTTP,39,6,6,4,316,12,1
-South America,Windows,HTTP,9,7,15,4.994305239179955,174,92,1
-Asia,Linux,HTTP,3,3,1,4.994305239179955,316,103,1
-South America,Linux,HTTP,45,10,3,4.994305239179955,249,103,1
-Asia,Linux,HTTP,49,6,2,4.994305239179955,328,103,1
-Asia,Windows,HTTP,4,6,16,4.994305239179955,316,87,1
-Asia,Windows,HTTP,39,6,11,4.994305239179955,174,92,1
-North America,Linux,HTTP,37,0,9,4.994305239179955,316,54,1
-Asia,Linux,HTTP,4,6,2,4.994305239179955,0,72,1
-Africa,Linux,HTTP,33,2,6,4.994305239179955,174,103,1
-North America,Linux,SSH,24,0,7,4.994305239179955,0,54,1
-Asia,Linux,HTTP,4,6,6,4.994305239179955,316,72,1
-Africa,Linux,HTTP,21,4,6,4.994305239179955,249,72,1
-Asia,Linux,HTTP,4,6,4,4.994305239179955,174,112,1
-North America,Linux,HTTP,43,9,4,4.994305239179955,60,109,0
-Africa,Linux,HTTP,36,2,5,4.994305239179955,249,92,1
-Asia,Linux,HTTP,35,3,1,4.994305239179955,0,92,1
-Asia,Linux,HTTP,4,6,5,4.994305239179955,0,103,1
-Asia,Linux,HTTP,3,3,1,4.994305239179955,174,18,1
-North America,Linux,HTTP,16,0,8,3,0,103,1
+South America,Linux,HTTP,7,7,2,7,316,25.5,1
+North America,Windows,SMTP,25,9,14.5,12,249,109,1
+Asia,Linux,HTTP,39,6,6,4,316,25.5,1
+South America,Windows,HTTP,9,7,14.5,5.0,174,92,1
+Asia,Linux,HTTP,3,3,1,5.0,316,103,1
+South America,Linux,HTTP,45,10,3,5.0,249,103,1
+Asia,Linux,HTTP,49,6,2,5.0,328,103,1
+Asia,Windows,HTTP,4,6,14.5,5.0,316,87,1
+Asia,Windows,HTTP,39,6,11,5.0,174,92,1
+North America,Linux,HTTP,37,0,9,5.0,316,54,1
+Asia,Linux,HTTP,4,6,2,5.0,61.5,72,1
+Africa,Linux,HTTP,33,2,6,5.0,174,103,1
+North America,Linux,SSH,24,0,7,5.0,61.5,54,1
+Asia,Linux,HTTP,4,6,6,5.0,316,72,1
+Africa,Linux,HTTP,21,4,6,5.0,249,72,1
+Asia,Linux,HTTP,4,6,4,5.0,174,112,1
+North America,Linux,HTTP,43,9,4,5.0,61.5,109,0
+Africa,Linux,HTTP,36,2,5,5.0,249,92,1
+Asia,Linux,HTTP,35,3,1,5.0,61.5,92,1
+Asia,Linux,HTTP,4,6,5,5.0,61.5,103,1
+Asia,Linux,HTTP,3,3,1,5.0,174,25.5,1
+North America,Linux,HTTP,16,0,8,3,61.5,103,1
 Asia,Linux,HTTP,4,6,4,2,174,72,1
 Asia,Linux,HTTP,49,6,2,7,249,48,1
 Africa,Linux,HTTP,21,4,2,7,174,72,1
 Africa,Linux,HTTP,21,4,4,2,316,92,1
 Asia,Linux,HTTP,35,3,1,0,316,84,1
 Africa,Linux,HTTP,23,4,5,6,249,113,1
-South America,Linux,HTTP,45,10,2,7,0,103,1
-North America,Windows,HTTP,24,0,11,17,249,103,1
+South America,Linux,HTTP,45,10,2,7,61.5,103,1
+North America,Windows,HTTP,24,0,11,14.5,249,103,1
 South America,Linux,HTTP,42,7,7,1,74,34,1
-Africa,Windows,HTTP,36,2,15,10,249,92,1
+Africa,Windows,HTTP,36,2,14.5,10,249,92,1
 Africa,Linux,HTTP,21,4,2,7,249,103,1
-Asia,Linux,HTTP,35,3,4,2,0,24,1
-South America,Linux,HTTP,45,10,8,3,0,72,1
+Asia,Linux,HTTP,35,3,4,2,61.5,25.5,1
+South America,Linux,HTTP,45,10,8,3,61.5,72,1
 Africa,Linux,HTTP,6,4,4,2,249,103,1
 North America,Linux,HTTP,24,0,5,6,249,103,1
 Asia,Linux,HTTP,4,6,1,0,316,72,1
@@ -165,51 +165,51 @@ Asia,Linux,HTTP,3,3,3,5,249,92,1
 Asia,Linux,SMTP,4,6,2,7,303,72,1
 Africa,Linux,HTTP,36,2,1,0,174,103,1
 Asia,Linux,HTTP,49,6,6,4,249,103,1
-Africa,Linux,HTTP,36,2,1,4.994305239179955,249,103,1
-Asia,Linux,HTTP,4,6,5,4.994305239179955,249,98,1
-Asia,Windows,HTTP,4,6,15,4.994305239179955,249,103,1
-Africa,Linux,HTTP,33,2,8,4.994305239179955,249,92,1
-Africa,Linux,HTTP,36,2,1,4.994305239179955,174,103,1
-North America,Linux,HTTP,16,0,1,4.994305239179955,316,112,1
-Africa,Linux,HTTP,36,2,1,4.994305239179955,0,92,1
-Asia,Linux,HTTP,4,6,3,4.994305239179955,316,72,1
-Asia,Mac,HTTP,49,6,9,4.994305239179955,249,2,1
-Asia,Windows,HTTP,4,6,16,4.994305239179955,174,103,1
-Africa,Linux,HTTP,33,2,5,4.994305239179955,174,18,1
-Africa,Linux,HTTP,21,4,5,4.994305239179955,316,2,1
-Africa,Linux,HTTP,33,2,6,4.994305239179955,174,18,1
+Africa,Linux,HTTP,36,2,1,5.0,249,103,1
+Asia,Linux,HTTP,4,6,5,5.0,249,98,1
+Asia,Windows,HTTP,4,6,14.5,5.0,249,103,1
+Africa,Linux,HTTP,33,2,8,5.0,249,92,1
+Africa,Linux,HTTP,36,2,1,5.0,174,103,1
+North America,Linux,HTTP,16,0,1,5.0,316,112,1
+Africa,Linux,HTTP,36,2,1,5.0,61.5,92,1
+Asia,Linux,HTTP,4,6,3,5.0,316,72,1
+Asia,Mac,HTTP,49,6,9,5.0,249,25.5,1
+Asia,Windows,HTTP,4,6,14.5,5.0,174,103,1
+Africa,Linux,HTTP,33,2,5,5.0,174,25.5,1
+Africa,Linux,HTTP,21,4,5,5.0,316,25.5,1
+Africa,Linux,HTTP,33,2,6,5.0,174,25.5,1
 North America,Linux,HTTP,31,9,6,4,162,113,1
 Asia,Linux,HTTP,5,3,4,2,174,103,1
 Africa,Linux,HTTP,40,2,1,0,174,92,1
-Asia,Linux,SMTP,49,6,5,6,0,103,1
-South America,Windows,HTTP,22,7,15,10,174,103,1
+Asia,Linux,SMTP,49,6,5,6,61.5,103,1
+South America,Windows,HTTP,22,7,14.5,10,174,103,1
 Africa,Mac,HTTP,36,2,9,8,249,92,1
 Asia,Linux,HTTP,15,3,8,3,249,103,1
 Asia,Linux,HTTP,4,6,2,7,249,72,1
 Asia,Linux,HTTP,4,6,4,2,174,103,1
 Asia,Linux,HTTP,4,6,2,7,316,116,1
-Africa,Linux,HTTP,21,4,6,4,174,18,1
-Asia,Linux,HTTP,4,6,5,6,249,24,1
-South America,Linux,HTTP,45,10,5,6,0,98,1
-North America,Linux,HTTP,24,0,6,4,0,103,1
-South America,Windows,HTTP,42,7,12,16,127,103,1
-Asia,Linux,HTTP,3,4.358684480986639,1,0,316,72,1
-North America,Linux,HTTP,16,4.358684480986639,8,3,316,72,1
-North America,Linux,HTTP,24,4.358684480986639,5,6,249,98,1
-Africa,Mac,HTTP,40,4.358684480986639,16,12,249,58,1
-Africa,Linux,HTTP,21,4.358684480986639,7,1,174,112,1
-South America,Windows,HTTP,44,4.358684480986639,11,17,174,103,1
-Africa,Linux,HTTP,33,4.358684480986639,7,1,174,116,1
+Africa,Linux,HTTP,21,4,6,4,174,25.5,1
+Asia,Linux,HTTP,4,6,5,6,249,25.5,1
+South America,Linux,HTTP,45,10,5,6,61.5,98,1
+North America,Linux,HTTP,24,0,6,4,61.5,103,1
+South America,Windows,HTTP,42,7,12,14.5,127,103,1
+Asia,Linux,HTTP,3,7.0,1,0,316,72,1
+North America,Linux,HTTP,16,7.0,8,3,316,72,1
+North America,Linux,HTTP,24,7.0,5,6,249,98,1
+Africa,Mac,HTTP,40,7.0,14.5,12,249,58,1
+Africa,Linux,HTTP,21,7.0,7,1,174,112,1
+South America,Windows,HTTP,44,7.0,11,14.5,174,103,1
+Africa,Linux,HTTP,33,7.0,7,1,174,116,1
 South America,Linux,HTTP,45,10,7,1,174,72,1
 Asia,Linux,HTTP,4,6,1,0,316,34,1
 North America,Linux,HTTP,16,0,5,6,174,103,1
 Africa,Linux,HTTP,33,2,5,6,174,92,1
-Africa,Linux,HTTP,6,4,4,4.994305239179955,249,103,1
-Africa,Windows,HTTP,36,2,15,4.994305239179955,174,92,1
-North America,Linux,HTTP,37,0,8,4.994305239179955,231,98,1
-South America,Linux,HTTP,45,10,2,4.994305239179955,316,72,1
-North America,Linux,HTTP,24,0,4,4.994305239179955,174,92,1
-Asia,Linux,HTTP,3,3,1,4.994305239179955,316,109,1
+Africa,Linux,HTTP,6,4,4,5.0,249,103,1
+Africa,Windows,HTTP,36,2,14.5,5.0,174,92,1
+North America,Linux,HTTP,37,0,8,5.0,231,98,1
+South America,Linux,HTTP,45,10,2,5.0,316,72,1
+North America,Linux,HTTP,24,0,4,5.0,174,92,1
+Asia,Linux,HTTP,3,3,1,5.0,316,109,1
 South America,Linux,HTTP,45,10,2,7,316,112,1
 North America,Linux,HTTP,16,0,6,4,249,103,1
 Africa,Linux,HTTP,36,2,1,0,316,92,1
@@ -217,71 +217,71 @@ North America,Linux,HTTP,24,0,5,6,249,72,1
 South America,Linux,HTTP,9,7,6,4,316,72,1
 Africa,Linux,HTTP,21,4,5,6,179,92,0
 South America,Linux,HTTP,44,1,4,2,299,92,1
-South America,Windows,HTTP,44,1,16,12,174,112,1
-Asia,Linux,HTTP,15,3,7,1,182.64424057084608,85.03571428571429,1
-Asia,Linux,HTTP,3,3,4,2,182.64424057084608,85.03571428571429,1
-South America,Linux,HTTP,45,10,6,4,182.64424057084608,85.03571428571429,1
-Asia,Linux,HTTP,4,6,1,0,182.64424057084608,85.03571428571429,1
-Africa,Linux,HTTP,21,4,2,7,182.64424057084608,85.03571428571429,1
-Asia,Linux,HTTP,4,6,3,5,182.64424057084608,85.03571428571429,1
-South America,Windows,HTTP,9,7,15,10,0,72,1
+South America,Windows,HTTP,44,1,14.5,12,174,112,1
+Asia,Linux,HTTP,15,3,7,1,183.0,85.0,1
+Asia,Linux,HTTP,3,3,4,2,183.0,85.0,1
+South America,Linux,HTTP,45,10,6,4,183.0,85.0,1
+Asia,Linux,HTTP,4,6,1,0,183.0,85.0,1
+Africa,Linux,HTTP,21,4,2,7,183.0,85.0,1
+Asia,Linux,HTTP,4,6,3,5,183.0,85.0,1
+South America,Windows,HTTP,9,7,14.5,10,61.5,72,1
 Asia,Mac,HTTP,3,3,9,8,174,112,1
 South America,Linux,HTTP,7,7,2,7,316,72,1
 Africa,Linux,HTTP,36,2,1,0,174,103,1
-South America,Linux,HTTP,45,10,5.941598360655738,4.994305239179955,316,103,1
-Africa,Linux,HTTP,36,2,5.941598360655738,4.994305239179955,316,92,1
-Africa,Windows,HTTP,36,2,5.941598360655738,4.994305239179955,174,92,1
-North America,Linux,HTTP,17,0,5.941598360655738,4.994305239179955,0,54,1
-South America,Linux,HTTP,9,7,5.941598360655738,4.994305239179955,174,10,1
-Asia,Linux,HTTP,46,3,5.941598360655738,4.994305239179955,328,98,1
-Africa,Windows,HTTP,36,2,5.941598360655738,4.994305239179955,249,92,1
-North America,Linux,HTTP,24,0,5.941598360655738,4.994305239179955,174,111,1
-North America,Linux,HTTP,24,0,5.941598360655738,4.994305239179955,316,72,1
-South America,Mac,HTTP,47,7,5.941598360655738,4.994305239179955,174,112,1
-Africa,Linux,HTTP,36,2,5.941598360655738,4.994305239179955,127,103,0
-Africa,Windows,HTTP,36,2,5.941598360655738,4.994305239179955,174,18,1
-Asia,Linux,HTTP,4,6,5.941598360655738,4.994305239179955,316,103,1
-Asia,Mac,HTTP,4,6,5.941598360655738,4.994305239179955,174,110,1
+South America,Linux,HTTP,45,10,6.0,5.0,316,103,1
+Africa,Linux,HTTP,36,2,6.0,5.0,316,92,1
+Africa,Windows,HTTP,36,2,6.0,5.0,174,92,1
+North America,Linux,HTTP,17,0,6.0,5.0,61.5,54,1
+South America,Linux,HTTP,9,7,6.0,5.0,174,25.5,1
+Asia,Linux,HTTP,46,3,6.0,5.0,328,98,1
+Africa,Windows,HTTP,36,2,6.0,5.0,249,92,1
+North America,Linux,HTTP,24,0,6.0,5.0,174,111,1
+North America,Linux,HTTP,24,0,6.0,5.0,316,72,1
+South America,Mac,HTTP,47,7,6.0,5.0,174,112,1
+Africa,Linux,HTTP,36,2,6.0,5.0,127,103,0
+Africa,Windows,HTTP,36,2,6.0,5.0,174,25.5,1
+Asia,Linux,HTTP,4,6,6.0,5.0,316,103,1
+Asia,Mac,HTTP,4,6,6.0,5.0,174,110,1
 Asia,Linux,HTTP,49,6,7,1,249,103,1
 South America,Linux,HTTP,19,1,6,4,174,103,1
 Asia,Linux,HTTP,4,6,2,7,174,98,1
-South America,Windows,HTTP,44,1,11,17,249,103,1
+South America,Windows,HTTP,44,1,11,14.5,249,103,1
 Africa,Linux,HTTP,33,2,7,1,249,113,1
 Africa,Linux,HTTP,21,4,7,1,174,92,1
 Asia,Linux,HTTP,15,3,4,2,174,72,1
-North America,Linux,HTTP,16,0,1,0,0,72,1
-Asia,Windows,HTTP,4,6,15,10,174,103,1
-South America,Linux,HTTP,47,7,5.941598360655738,2,174,18,1
-South America,Windows,HTTP,9,4.358684480986639,15,10,0,72,1
-Asia,Linux,HTTP,4,6,1,0,182.64424057084608,85.03571428571429,1
-Africa,Linux,HTTP,36,2,1,0,182.64424057084608,85.03571428571429,1
-Asia,Linux,HTTP,4,6,2,7,182.64424057084608,85.03571428571429,1
-Africa,Linux,HTTP,6,4,5,6,182.64424057084608,85.03571428571429,1
-Asia,Linux,HTTP,39,6,2,7,182.64424057084608,85.03571428571429,1
-South America,Linux,HTTP,45,10,8,3,182.64424057084608,85.03571428571429,1
-Asia,Linux,HTTP,39,6,3,5,182.64424057084608,85.03571428571429,1
-South America,Windows,HTTP,22,7,15,10,174,72,1
+North America,Linux,HTTP,16,0,1,0,61.5,72,1
+Asia,Windows,HTTP,4,6,14.5,10,174,103,1
+South America,Linux,HTTP,47,7,6.0,2,174,25.5,1
+South America,Windows,HTTP,9,7.0,14.5,10,61.5,72,1
+Asia,Linux,HTTP,4,6,1,0,183.0,85.0,1
+Africa,Linux,HTTP,36,2,1,0,183.0,85.0,1
+Asia,Linux,HTTP,4,6,2,7,183.0,85.0,1
+Africa,Linux,HTTP,6,4,5,6,183.0,85.0,1
+Asia,Linux,HTTP,39,6,2,7,183.0,85.0,1
+South America,Linux,HTTP,45,10,8,3,183.0,85.0,1
+Asia,Linux,HTTP,39,6,3,5,183.0,85.0,1
+South America,Windows,HTTP,22,7,14.5,10,174,72,1
 Africa,Linux,HTTP,40,2,3,5,249,72,1
-North America,Windows,HTTP,18,4.358684480986639,12,16,328,92,1
-Africa,Windows,HTTP,36,2,15,10,316,92,1
-Africa,Linux,HTTP,21,4,4,4.994305239179955,174,111,1
-Asia,Mac,HTTP,4,6,9,4.994305239179955,174,112,1
-Asia,Linux,HTTP,4,6,6,4.994305239179955,174,103,1
-Africa,Linux,HTTP,36,2,1,4.994305239179955,174,103,1
-North America,Linux,HTTP,17,0,2,4.994305239179955,0,103,1
-Asia,Linux,HTTP,4,6,3,4.994305239179955,0,72,1
-Africa,Mac,HTTP,36,2,18,4.994305239179955,127,103,1
-Asia,Linux,HTTP,3,3,1,4.994305239179955,174,103,1
-Asia,Windows,HTTP,15,3,16,4.994305239179955,174,98,1
-North America,Linux,HTTP,37,0,7,4.994305239179955,249,92,1
-North America,Linux,HTTP,16,0,1,4.994305239179955,0,72,1
-South America,Linux,HTTP,47,7,8,4.994305239179955,330,113,1
-North America,Linux,HTTP,24,0,7,4.994305239179955,174,72,1
-Asia,Linux,HTTP,4,6,6,4.994305239179955,174,18,1
-Africa,Linux,HTTP,33,2,5,4.994305239179955,127,103,1
-Asia,Linux,SMTP,3,3,1,0,0,92,1
-Asia,Linux,HTTP,3,3,3,5,0,98,1
-Asia,Linux,HTTP,3,3,1,0,249,24,1
+North America,Windows,HTTP,18,7.0,12,14.5,328,92,1
+Africa,Windows,HTTP,36,2,14.5,10,316,92,1
+Africa,Linux,HTTP,21,4,4,5.0,174,111,1
+Asia,Mac,HTTP,4,6,9,5.0,174,112,1
+Asia,Linux,HTTP,4,6,6,5.0,174,103,1
+Africa,Linux,HTTP,36,2,1,5.0,174,103,1
+North America,Linux,HTTP,17,0,2,5.0,61.5,103,1
+Asia,Linux,HTTP,4,6,3,5.0,61.5,72,1
+Africa,Mac,HTTP,36,2,14.5,5.0,127,103,1
+Asia,Linux,HTTP,3,3,1,5.0,174,103,1
+Asia,Windows,HTTP,15,3,14.5,5.0,174,98,1
+North America,Linux,HTTP,37,0,7,5.0,249,92,1
+North America,Linux,HTTP,16,0,1,5.0,61.5,72,1
+South America,Linux,HTTP,47,7,8,5.0,330,113,1
+North America,Linux,HTTP,24,0,7,5.0,174,72,1
+Asia,Linux,HTTP,4,6,6,5.0,174,25.5,1
+Africa,Linux,HTTP,33,2,5,5.0,127,103,1
+Asia,Linux,SMTP,3,3,1,0,61.5,92,1
+Asia,Linux,HTTP,3,3,3,5,61.5,98,1
+Asia,Linux,HTTP,3,3,1,0,249,25.5,1
 Asia,Linux,HTTP,49,6,2,7,249,72,1
 Asia,Linux,HTTP,4,6,6,4,303,98,1
 Africa,Linux,HTTP,6,4,5,6,249,72,1
@@ -289,73 +289,73 @@ North America,Linux,HTTP,37,0,3,5,249,72,1
 Asia,Linux,HTTP,4,6,1,0,316,67,1
 Asia,Linux,HTTP,4,6,4,2,249,103,1
 Asia,Linux,HTTP,4,6,1,0,316,72,1
-North America,Linux,HTTP,37,0,5,6,174,18,1
+North America,Linux,HTTP,37,0,5,6,174,25.5,1
 Africa,Linux,HTTP,33,2,5,6,249,103,1
 Africa,Linux,HTTP,33,2,6,4,316,103,1
-Africa,Linux,HTTP,40,2,3,5,0,72,1
+Africa,Linux,HTTP,40,2,3,5,61.5,72,1
 Africa,Linux,HTTP,21,4,2,7,249,103,1
-Asia,Windows,HTTP,4,6,15,10,174,18,1
-Asia,Windows,HTTP,4,6,11,17,179,103,0
+Asia,Windows,HTTP,4,6,14.5,10,174,25.5,1
+Asia,Windows,HTTP,4,6,11,14.5,179,103,0
 Africa,Linux,HTTP,33,2,6,4,127,103,1
-Africa,Linux,HTTP,6,4,6,4,0,12,1
-North America,Linux,HTTP,37,0,2,4.994305239179955,316,103,1
-Asia,Linux,HTTP,4,6,5,4.994305239179955,0,103,1
-South America,Windows,HTTP,47,7,15,4.994305239179955,174,112,1
-South America,Linux,HTTP,45,10,2,4.994305239179955,249,84,1
-South America,Linux,HTTP,44,1,6,4.994305239179955,249,109,1
-North America,Linux,HTTP,37,0,2,4.994305239179955,316,103,1
-Asia,Linux,HTTP,4,6,4,4.994305239179955,174,112,1
-Africa,Linux,HTTP,33,2,7,4.994305239179955,174,103,1
-South America,Linux,HTTP,45,10,3,4.994305239179955,249,109,1
-South America,Windows,HTTP,22,7,15,4.994305239179955,316,112,1
-Asia,Linux,HTTP,49,6,15,10,174,103,1
-Africa,Linux,HTTP,36,2,1,0,174,18,1
+Africa,Linux,HTTP,6,4,6,4,61.5,25.5,1
+North America,Linux,HTTP,37,0,2,5.0,316,103,1
+Asia,Linux,HTTP,4,6,5,5.0,61.5,103,1
+South America,Windows,HTTP,47,7,14.5,5.0,174,112,1
+South America,Linux,HTTP,45,10,2,5.0,249,84,1
+South America,Linux,HTTP,44,1,6,5.0,249,109,1
+North America,Linux,HTTP,37,0,2,5.0,316,103,1
+Asia,Linux,HTTP,4,6,4,5.0,174,112,1
+Africa,Linux,HTTP,33,2,7,5.0,174,103,1
+South America,Linux,HTTP,45,10,3,5.0,249,109,1
+South America,Windows,HTTP,22,7,14.5,5.0,316,112,1
+Asia,Linux,HTTP,49,6,14.5,10,174,103,1
+Africa,Linux,HTTP,36,2,1,0,174,25.5,1
 North America,Linux,HTTP,16,0,5,6,174,92,1
-Africa,Linux,HTTP,36,2,13,18,174,92,1
-Asia,Mac,HTTP,4,6,18,13,249,2,1
+Africa,Linux,HTTP,36,2,13,14.5,174,92,1
+Asia,Mac,HTTP,4,6,14.5,13,249,25.5,1
 North America,Linux,HTTP,24,0,8,3,218,72,1
 Asia,Linux,HTTP,4,6,2,7,303,72,1
 Asia,Linux,HTTP,4,6,5,6,316,72,1
 Africa,Linux,HTTP,33,2,6,4,249,112,1
 Asia,Linux,HTTP,21,4,4,2,316,88,1
-Asia,Linux,HTTP,36,2,15,10,249,92,1
-Asia,Linux,HTTP,4,6,6,4,174,18,1
-South America,Windows,HTTP,22,7,15,10,174,103,1
+Asia,Linux,HTTP,36,2,14.5,10,249,92,1
+Asia,Linux,HTTP,4,6,6,4,174,25.5,1
+South America,Windows,HTTP,22,7,14.5,10,174,103,1
 Asia,Linux,HTTP,4,6,7,1,174,103,1
 North America,Linux,HTTP,29,9,3,5,249,92,1
 South America,Linux,HTTP,47,7,3,5,174,112,1
 North America,Linux,HTTP,24,0,5,6,249,103,1
 Asia,Linux,HTTP,31,9,8,3,328,72,1
 South America,Linux,HTTP,8,7,5,6,102,72,1
-Asia,Linux,HTTP,25.38617886178862,3,4,2,249,103,1
+Asia,Linux,HTTP,25.0,3,4,2,249,103,1
 Asia,Linux,HTTP,4,6,2,7,316,112,1
 South America,Linux,HTTP,9,7,7,1,303,72,1
-Asia,Linux,HTTP,4,6,2,7,174,2,1
+Asia,Linux,HTTP,4,6,2,7,174,25.5,1
 North America,Linux,HTTP,37,0,3,5,127,103,1
-Asia,Linux,HTTP,39,6,4,2,0,72,1
-Asia,Linux,HTTP,3,3,1,0,249,24,1
+Asia,Linux,HTTP,39,6,4,2,61.5,72,1
+Asia,Linux,HTTP,3,3,1,0,249,25.5,1
 Africa,Linux,HTTP,36,2,1,0,316,103,1
 Africa,Linux,HTTP,36,2,7,1,249,92,1
 Africa,Linux,HTTP,33,2,5,6,174,112,1
-South America,Linux,HTTP,45,10,3,5,174,18,1
-South America,Linux,HTTP,7,7,2,7,316,12,1
+South America,Linux,HTTP,45,10,3,5,174,25.5,1
+South America,Linux,HTTP,7,7,2,7,316,25.5,1
 North America,Linux,HTTP,14,9,5,6,174,98,1
 Africa,Linux,FTP,36,2,1,0,316,103,1
 Africa,Linux,HTTP,36,2,1,0,174,103,1
 Asia,Linux,HTTP,35,3,1,0,174,103,1
 Africa,Linux,HTTP,36,2,1,0,174,92,1
-Asia,Linux,HTTP,4,6,2,7,316,2,1
+Asia,Linux,HTTP,4,6,2,7,316,25.5,1
 Africa,Linux,HTTP,21,4,2,7,174,103,1
 South America,Linux,HTTP,45,10,3,5,249,103,1
-Asia,Windows,HTTP,4,6,15,10,249,72,1
+Asia,Windows,HTTP,4,6,14.5,10,249,72,1
 Asia,Linux,HTTP,4,6,6,4,316,109,1
-Asia,Linux,HTTP,4,6,1,0,0,72,1
+Asia,Linux,HTTP,4,6,1,0,61.5,72,1
 South America,Linux,HTTP,9,7,3,5,249,59,1
 North America,Linux,HTTP,25,9,7,1,174,103,1
 Asia,Linux,HTTP,3,3,3,5,249,103,1
-Asia,Linux,HTTP,4,6,6,4,174,18,1
+Asia,Linux,HTTP,4,6,6,4,174,25.5,1
 Asia,Linux,HTTP,4,6,1,0,249,103,1
-South America,Linux,HTTP,38,10,7,1,21,98,0
+South America,Linux,HTTP,38,10,7,1,61.5,98,0
 Asia,Linux,HTTP,4,6,4,2,249,103,1
 North America,Linux,HTTP,37,0,7,1,325,92,1
 Asia,Linux,HTTP,49,6,2,7,313,48,1
@@ -363,23 +363,23 @@ South America,Linux,HTTP,45,10,1,0,316,72,1
 Asia,Linux,HTTP,4,6,2,7,316,114,1
 Africa,Linux,HTTP,33,2,6,4,249,98,1
 Africa,Linux,HTTP,36,2,1,0,316,92,1
-Asia,Linux,HTTP,35,3,2,7,0,98,1
-Africa,Windows,HTTP,36,2,15,10,174,92,1
-South America,Linux,HTTP,44,1,2,7,249,24,1
+Asia,Linux,HTTP,35,3,2,7,61.5,98,1
+Africa,Windows,HTTP,36,2,14.5,10,174,92,1
+South America,Linux,HTTP,44,1,2,7,249,25.5,1
 Asia,Linux,HTTP,24,0,7,1,249,72,1
 Africa,Linux,HTTP,33,2,7,1,249,103,1
-Asia,Windows,HTTP,2,10,12,16,0,103,1
-Asia,Windows,HTTP,4,6,15,10,249,103,1
+Asia,Windows,HTTP,2,10,12,14.5,61.5,103,1
+Asia,Windows,HTTP,4,6,14.5,10,249,103,1
 South America,Linux,HTTP,45,10,3,5,174,112,1
 North America,Mac,HTTP,16,0,9,8,174,112,1
 Africa,Linux,HTTP,21,4,2,7,174,72,1
 Asia,Linux,HTTP,37,0,6,4,313,116,1
-South America,Windows,HTTP,47,7,15,10,249,112,1
+South America,Windows,HTTP,47,7,14.5,10,249,112,1
 Asia,Linux,SSH,43,9,5,6,316,103,1
-South America,Windows,HTTP,22,7,15,10,174,103,1
-South America,Windows,HTTP,42,7,11,17,316,103,1
+South America,Windows,HTTP,22,7,14.5,10,174,103,1
+South America,Windows,HTTP,42,7,11,14.5,316,103,1
 North America,Linux,HTTP,24,0,5,6,277,72,1
-South America,Linux,HTTP,7,7,2,7,0,72,1
+South America,Linux,HTTP,7,7,2,7,61.5,72,1
 Africa,Linux,HTTP,33,2,8,3,249,112,1
 North America,Linux,HTTP,25,9,6,4,249,112,1
 Africa,Linux,HTTP,21,4,5,6,174,103,1
@@ -388,40 +388,40 @@ South America,Linux,HTTP,38,10,3,5,179,103,0
 Asia,Mac,HTTP,4,6,9,8,174,112,1
 Africa,Linux,HTTP,33,2,8,3,249,92,1
 South America,Linux,HTTP,45,10,1,0,127,103,1
-Asia,Linux,HTTP,36,2,1,0,0,92,1
-Asia,Linux,HTTP,4,6,2,7,0,72,1
+Asia,Linux,HTTP,36,2,1,0,61.5,92,1
+Asia,Linux,HTTP,4,6,2,7,61.5,72,1
 North America,Linux,SMTP,50,0,6,4,316,112,1
-Asia,Linux,HTTP,15,3,4,2,174,18,1
+Asia,Linux,HTTP,15,3,4,2,174,25.5,1
 Asia,Linux,HTTP,4,6,1,0,174,42,1
 South America,Linux,HTTP,44,1,8,3,174,59,1
-North America,Windows,HTTP,24,0,11,17,316,103,1
+North America,Windows,HTTP,24,0,11,14.5,316,103,1
 Asia,Linux,HTTP,49,6,2,7,316,72,1
 Africa,Linux,HTTP,36,2,6,4,316,92,1
 Africa,Linux,HTTP,21,4,7,1,249,109,1
 Asia,Linux,HTTP,21,4,8,3,174,112,1
 Africa,Linux,HTTP,33,2,5,6,127,112,1
-Asia,Linux,HTTP,4,6,1,0,0,72,1
-Asia,Windows,HTTP,4,6,15,10,0,72,1
-Asia,Mac,HTTP,19,1,9,8,316,2,1
+Asia,Linux,HTTP,4,6,1,0,61.5,72,1
+Asia,Windows,HTTP,4,6,14.5,10,61.5,72,1
+Asia,Mac,HTTP,19,1,9,8,316,25.5,1
 South America,Linux,HTTP,42,7,9,8,174,111,1
 Africa,Linux,HTTP,33,2,7,1,249,72,1
 North America,Linux,HTTP,16,0,1,0,316,103,1
-Asia,Windows,HTTP,49,6,15,10,174,110,1
+Asia,Windows,HTTP,49,6,14.5,10,174,110,1
 South America,Mac,HTTP,44,1,9,8,174,103,1
 South America,Mac,HTTP,22,7,9,8,174,112,1
 Asia,Mac,HTTP,8,7,9,8,174,112,1
-Africa,Linux,HTTP,33,2,6,4,174,18,1
+Africa,Linux,HTTP,33,2,6,4,174,25.5,1
 South America,Linux,HTTP,8,7,8,3,174,103,1
-Africa,Linux,HTTP,33,2,8,3,0,72,1
+Africa,Linux,HTTP,33,2,8,3,61.5,72,1
 Asia,Linux,HTTP,4,6,4,2,249,111,1
-Asia,Windows,HTTP,4,6,15,10,174,109,1
-Africa,Windows,HTTP,36,2,15,10,174,92,0
-North America,Windows,HTTP,24,0,16,12,74,103,1
-Africa,Linux,HTTP,33,2,5,6,127,18,1
+Asia,Windows,HTTP,4,6,14.5,10,174,109,1
+Africa,Windows,HTTP,36,2,14.5,10,174,92,0
+North America,Windows,HTTP,24,0,14.5,12,74,103,1
+Africa,Linux,HTTP,33,2,5,6,127,25.5,1
 Africa,Linux,HTTP,33,2,7,1,316,72,1
-North America,Linux,HTTP,25,9,6,4,0,72,1
+North America,Linux,HTTP,25,9,6,4,61.5,72,1
 Asia,Linux,HTTP,4,6,3,5,249,72,1
-Africa,Linux,HTTP,21,4,2,7,0,72,1
+Africa,Linux,HTTP,21,4,2,7,61.5,72,1
 North America,Linux,HTTP,24,0,6,4,316,102,1
 Africa,Linux,HTTP,21,4,2,7,249,112,1
 Asia,Linux,HTTP,4,6,1,0,179,103,0
@@ -429,64 +429,64 @@ Asia,Linux,HTTP,4,6,3,5,174,72,1
 Africa,Linux,HTTP,33,2,7,1,174,111,1
 Asia,Linux,HTTP,4,6,4,2,174,103,1
 Asia,Linux,HTTP,3,3,7,1,174,103,1
-Asia,Linux,HTTP,3,3,1,0,0,72,1
+Asia,Linux,HTTP,3,3,1,0,61.5,72,1
 Asia,Linux,HTTP,49,6,2,7,249,72,1
 Asia,Linux,HTTP,4,6,1,0,174,98,1
 Asia,Linux,HTTP,4,6,1,0,316,116,1
-Asia,Linux,HTTP,4,6,4,2,192,18,0
+Asia,Linux,HTTP,4,6,4,2,192,25.5,0
 North America,Linux,HTTP,43,9,5,6,316,103,1
 Asia,Linux,HTTP,49,6,2,7,200,83,0
 Asia,Linux,HTTP,3,3,2,7,303,72,1
-Africa,Windows,HTTP,36,2,15,10,174,92,1
+Africa,Windows,HTTP,36,2,14.5,10,174,92,1
 South America,Linux,HTTP,47,7,6,4,174,98,1
 Africa,Linux,HTTP,33,2,5,6,249,72,1
 Africa,Linux,HTTP,33,2,7,1,249,103,1
 Asia,Linux,HTTP,4,6,3,5,303,72,1
 North America,Linux,HTTP,25,9,3,5,316,103,1
-Asia,Windows,HTTP,4,6,15,10,249,103,1
-Asia,Linux,HTTP,3,3,2,7,174,18,1
+Asia,Windows,HTTP,4,6,14.5,10,249,103,1
+Asia,Linux,HTTP,3,3,2,7,174,25.5,1
 Asia,Linux,HTTP,3,3,4,2,249,98,1
-Africa,Windows,HTTP,36,2,15,10,174,92,1
-North America,Linux,HTTP,24,0,6,4,0,59,1
-North America,Linux,HTTP,16,0,1,0,0,42,1
+Africa,Windows,HTTP,36,2,14.5,10,174,92,1
+North America,Linux,HTTP,24,0,6,4,61.5,59,1
+North America,Linux,HTTP,16,0,1,0,61.5,42,1
 Africa,Linux,HTTP,36,2,6,4,249,92,1
 Asia,Linux,HTTP,4,6,1,0,249,92,1
 Africa,Linux,HTTP,33,2,6,4,174,112,1
-North America,Linux,HTTP,16,0,1,0,102,24,1
-North America,Linux,HTTP,16,0,1,0,316,2,1
+North America,Linux,HTTP,16,0,1,0,102,25.5,1
+North America,Linux,HTTP,16,0,1,0,316,25.5,1
 Asia,Linux,HTTP,4,6,6,4,316,72,1
 North America,Linux,HTTP,29,9,8,3,316,92,1
-South America,Linux,HTTP,38,10,3,5,0,72,1
+South America,Linux,HTTP,38,10,3,5,61.5,72,1
 Asia,Linux,HTTP,4,6,3,5,174,103,1
-South America,Linux,HTTP,45,10,5,6,174,24,1
-North America,Linux,HTTP,37,0,3,5,0,98,1
-South America,Linux,HTTP,9,7,5,6,0,72,1
+South America,Linux,HTTP,45,10,5,6,174,25.5,1
+North America,Linux,HTTP,37,0,3,5,61.5,98,1
+South America,Linux,HTTP,9,7,5,6,61.5,72,1
 North America,Linux,HTTP,24,0,6,4,249,113,1
 Asia,Linux,HTTP,4,6,5,6,174,112,1
 Africa,Linux,HTTP,21,4,7,1,174,112,1
 Africa,Linux,HTTP,36,2,1,0,127,92,1
 Africa,Linux,HTTP,33,2,8,3,316,72,1
-South America,Windows,HTTP,22,7,15,10,174,103,1
+South America,Windows,HTTP,22,7,14.5,10,174,103,1
 Asia,Linux,HTTP,49,6,6,4,174,110,1
-South America,Linux,HTTP,45,10,1,0,0,72,1
+South America,Linux,HTTP,45,10,1,0,61.5,72,1
 Africa,Linux,HTTP,6,4,5,6,174,112,1
 Asia,Linux,HTTP,15,3,6,4,249,59,1
 Asia,Linux,HTTP,4,6,2,7,174,103,1
 North America,Linux,HTTP,18,9,3,5,249,103,1
-Africa,Linux,HTTP,21,4,4,2,0,72,1
-Africa,Linux,HTTP,6,4,5,6,0,103,1
-Asia,Linux,HTTP,4,6,4,2,0,72,1
+Africa,Linux,HTTP,21,4,4,2,61.5,72,1
+Africa,Linux,HTTP,6,4,5,6,61.5,103,1
+Asia,Linux,HTTP,4,6,4,2,61.5,72,1
 South America,Linux,HTTP,47,7,4,2,174,103,1
-Africa,Mac,HTTP,33,2,17,11,174,102,1
-Asia,Linux,HTTP,4,6,5,6,0,34,1
+Africa,Mac,HTTP,33,2,14.5,11,174,102,1
+Asia,Linux,HTTP,4,6,5,6,61.5,34,1
 Asia,Linux,HTTP,5,3,5,6,249,72,1
 Asia,Linux,HTTP,35,3,4,2,174,103,1
 Asia,Linux,HTTP,39,6,5,6,249,92,1
-Africa,Linux,FTP,36,2,1,0,0,92,1
+Africa,Linux,FTP,36,2,1,0,61.5,92,1
 South America,Linux,HTTP,42,7,4,2,316,103,1
 North America,Linux,HTTP,37,0,2,7,316,103,1
 Asia,Linux,HTTP,49,6,2,7,249,72,1
-Africa,Linux,HTTP,21,4,2,7,0,103,1
+Africa,Linux,HTTP,21,4,2,7,61.5,103,1
 South America,Linux,HTTP,11,7,3,5,174,48,1
 South America,Linux,HTTP,44,1,8,3,249,103,1
 North America,Linux,HTTP,37,0,2,7,249,72,1
@@ -500,57 +500,57 @@ North America,Linux,HTTP,50,0,5,6,316,72,1
 North America,Linux,HTTP,24,0,8,3,249,98,1
 Asia,Linux,HTTP,19,1,7,1,174,103,1
 Asia,Linux,HTTP,9,7,5,6,303,72,1
-Africa,Linux,HTTP,25.38617886178862,2,6,4,0,92,1
-Asia,Linux,HTTP,25.38617886178862,6,1,0,249,24,1
-South America,Linux,HTTP,25.38617886178862,10,8,3,249,112,1
-Africa,Linux,HTTP,25.38617886178862,2,7,1,249,72,1
-Asia,Linux,HTTP,25.38617886178862,3,3,5,0,72,1
-Africa,Linux,HTTP,25.38617886178862,2,7,1,174,112,1
-Asia,Linux,HTTP,25.38617886178862,6,1,0,174,2,1
+Africa,Linux,HTTP,25.0,2,6,4,61.5,92,1
+Asia,Linux,HTTP,25.0,6,1,0,249,25.5,1
+South America,Linux,HTTP,25.0,10,8,3,249,112,1
+Africa,Linux,HTTP,25.0,2,7,1,249,72,1
+Asia,Linux,HTTP,25.0,3,3,5,61.5,72,1
+Africa,Linux,HTTP,25.0,2,7,1,174,112,1
+Asia,Linux,HTTP,25.0,6,1,0,174,25.5,1
 North America,Linux,HTTP,16,0,7,1,316,72,1
 South America,Mac,HTTP,22,7,9,8,174,112,1
 North America,Linux,HTTP,26,9,5,6,249,103,1
 Africa,Linux,FTP,36,2,1,0,249,92,1
-Asia,Linux,HTTP,4,6,5,6,43,72,0
+Asia,Linux,HTTP,4,6,5,6,61.5,72,0
 North America,Linux,HTTP,37,0,6,4,114,103,0
-Asia,Windows,HTTP,37,0,16,12,245,92,0
-South America,Windows,FTP,8,7,15,10,200,103,0
-South America,Mac,HTTP,19,1,14,14,128,18,0
-North America,Linux,HTTP,26,9,3,5,43,72,0
-Africa,Windows,HTTP,36,2,15,10,174,103,0
-Africa,Windows,HTTP,36,2,15,10,174,92,0
-Africa,Linux,HTTP,36,4.358684480986639,1,0,174,92,0
-South America,Linux,HTTP,45,4.358684480986639,7,1,128,109,0
-Asia,Linux,HTTP,3,4.358684480986639,6,4,179,109,0
-Asia,Linux,HTTP,49,4.358684480986639,8,3,179,98,0
-Africa,Linux,HTTP,36,4.358684480986639,1,0,174,103,0
-South America,Windows,HTTP,22,4.358684480986639,15,10,179,112,0
-Africa,Linux,HTTP,6,4.358684480986639,5,6,132,103,0
-North America,Linux,HTTP,37,4.358684480986639,9,8,71,12,0
-Asia,Linux,HTTP,49,4.358684480986639,9,8,179,67,0
-Asia,Mac,HTTP,4,4.358684480986639,9,8,263,112,0
+Asia,Windows,HTTP,37,0,14.5,12,245,92,0
+South America,Windows,FTP,8,7,14.5,10,200,103,0
+South America,Mac,HTTP,19,1,14,14,128,25.5,0
+North America,Linux,HTTP,26,9,3,5,61.5,72,0
+Africa,Windows,HTTP,36,2,14.5,10,174,103,0
+Africa,Windows,HTTP,36,2,14.5,10,174,92,0
+Africa,Linux,HTTP,36,7.0,1,0,174,92,0
+South America,Linux,HTTP,45,7.0,7,1,128,109,0
+Asia,Linux,HTTP,3,7.0,6,4,179,109,0
+Asia,Linux,HTTP,49,7.0,8,3,179,98,0
+Africa,Linux,HTTP,36,7.0,1,0,174,103,0
+South America,Windows,HTTP,22,7.0,14.5,10,179,112,0
+Africa,Linux,HTTP,6,7.0,5,6,132,103,0
+North America,Linux,HTTP,37,7.0,9,8,71,25.5,0
+Asia,Linux,HTTP,49,7.0,9,8,179,67,0
+Asia,Mac,HTTP,4,7.0,9,8,263,112,0
 Asia,Linux,HTTP,4,6,5,6,128,103,0
-Asia,Linux,HTTP,18,9,3,5,43,72,0
+Asia,Linux,HTTP,18,9,3,5,61.5,72,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
-North America,Linux,HTTP,16,0,4,2,43,72,0
-Asia,Linux,HTTP,4,6,6,4,263,12,0
+North America,Linux,HTTP,16,0,4,2,61.5,72,0
+Asia,Linux,HTTP,4,6,6,4,263,25.5,0
 Africa,Linux,HTTP,21,4,6,4,82,103,0
 Asia,Linux,HTTP,4,6,2,7,179,109,0
-Asia,Windows,HTTP,49,6,15,10,71,12,0
-Asia,Linux,HTTP,49,6,2,7,263,12,0
+Asia,Windows,HTTP,49,6,14.5,10,71,25.5,0
+Asia,Linux,HTTP,49,6,2,7,263,25.5,0
 Asia,Linux,HTTP,38,10,8,3,111,48,0
-North America,Linux,HTTP,18,9,8,3,20,103,0
+North America,Linux,HTTP,18,9,8,3,61.5,103,0
 North America,Linux,HTTP,24,0,4,2,198,42,0
-North America,Windows,HTTP,24,0,15,10,263,112,0
+North America,Windows,HTTP,24,0,14.5,10,263,112,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
 Africa,Linux,HTTP,36,2,1,0,174,92,0
-Africa,Windows,HTTP,36,2,15,10,174,103,0
+Africa,Windows,HTTP,36,2,14.5,10,174,103,0
 Africa,Linux,HTTP,23,4,7,1,263,98,0
-North America,Linux,HTTP,37,0,3,5,43,72,0
+North America,Linux,HTTP,37,0,3,5,61.5,72,0
 North America,Linux,HTTP,18,9,7,1,71,103,0
 Africa,Mac,SMTP,21,4,9,8,82,112,0
-South America,Windows,HTTP,20,10,16,12,256,103,0
+South America,Windows,HTTP,20,10,14.5,12,256,103,0
 Africa,Linux,FTP,36,2,1,0,174,92,0
 Africa,Linux,HTTP,21,4,7,1,179,103,0
 South America,Mac,HTTP,22,7,9,8,192,112,0
@@ -559,90 +559,90 @@ Africa,Mac,HTTP,36,2,9,8,174,92,0
 North America,Linux,HTTP,26,9,3,5,179,103,0
 North America,Linux,HTTP,16,0,7,1,179,103,0
 Africa,Linux,HTTP,41,4,6,4,111,103,0
-Asia,Linux,FTP,4,6,5,6,111,18,0
+Asia,Linux,FTP,4,6,5,6,111,25.5,0
 North America,Linux,HTTP,37,0,2,7,222,98,0
-North America,Linux,HTTP,24,0,8,3,73,24,0
+North America,Linux,HTTP,24,0,8,3,73,25.5,0
 North America,Linux,HTTP,26,9,3,5,263,92,0
-Africa,Linux,HTTP,40,2,6,4,21,103,0
+Africa,Linux,HTTP,40,2,6,4,61.5,103,0
 South America,Linux,FTP,45,10,6,4,179,72,0
-North America,Linux,HTTP,26,9,3,5,21,27,0
+North America,Linux,HTTP,26,9,3,5,61.5,27,0
 South America,Linux,HTTP,44,1,2,7,73,113,0
-South America,Windows,FTP,42,7,15,10,263,103,0
+South America,Windows,FTP,42,7,14.5,10,263,103,0
 Africa,Linux,HTTP,36,2,1,0,174,92,0
 Asia,Linux,HTTP,4,6,4,2,263,72,0
 Africa,Linux,HTTP,6,4,4,2,179,42,0
-Africa,Linux,HTTP,6,4,4,2,39,98,0
+Africa,Linux,HTTP,6,4,4,2,61.5,98,0
 Africa,Linux,HTTP,6,4,4,2,179,112,0
 Asia,Linux,HTTP,49,6,6,4,179,103,0
 South America,Linux,HTTP,47,7,7,1,303,113,0
-Africa,Windows,HTTP,36,2,15,10,174,103,0
-South America,Windows,HTTP,27,1,12,16,150,103,0
+Africa,Windows,HTTP,36,2,14.5,10,174,103,0
+South America,Windows,HTTP,27,1,12,14.5,150,103,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
 Asia,Linux,HTTP,4,6,1,0,68,103,0
-North America,Windows,HTTP,26,9,12,16,174,103,0
+North America,Windows,HTTP,26,9,12,14.5,174,103,0
 Asia,Linux,HTTP,4,6,3,5,263,84,0
-South America,Windows,FTP,19,1,16,12,274,54,0
+South America,Windows,FTP,19,1,14.5,12,274,54,0
 North America,Linux,HTTP,24,0,7,1,73,72,0
-Asia,Windows,HTTP,5,3,16,12,174,111,0
+Asia,Windows,HTTP,5,3,14.5,12,174,111,0
 Asia,Linux,HTTP,4,6,3,5,182,98,0
 Asia,Linux,HTTP,4,6,2,7,263,72,0
-Asia,Linux,HTTP,4,6,1,0,21,103,0
-North America,Windows,HTTP,14,9,12,16,111,103,0
+Asia,Linux,HTTP,4,6,1,0,61.5,103,0
+North America,Windows,HTTP,14,9,12,14.5,111,103,0
 Asia,Linux,HTTP,4,6,6,4,306,72,0
 Asia,Linux,HTTP,4,6,6,4,179,103,0
 North America,Linux,HTTP,37,0,2,7,179,76,0
-Asia,Linux,HTTP,49,6,7,1,128,18,0
-Asia,Linux,HTTP,4,6,1,0,21,88,0
+Asia,Linux,HTTP,49,6,7,1,128,25.5,0
+Asia,Linux,HTTP,4,6,1,0,61.5,88,0
 Asia,Linux,HTTP,4,6,2,7,263,48,0
 Africa,Linux,HTTP,21,4,2,7,200,92,0
 Asia,Linux,HTTP,4,6,6,4,179,103,0
 Africa,Linux,HTTP,21,4,5,6,205,32,0
 Asia,Linux,HTTP,4,6,7,1,67,54,0
 North America,Linux,HTTP,24,0,5,6,204,103,0
-North America,Linux,HTTP,26,9,3,5,21,44,0
+North America,Linux,HTTP,26,9,3,5,61.5,44,0
 Africa,Linux,HTTP,21,4,6,4,174,98,0
 North America,Linux,HTTP,37,0,3,5,128,103,0
-Asia,Linux,HTTP,4,6,3,5,71,24,0
-North America,Windows,HTTP,26,9,15,10,179,103,0
+Asia,Linux,HTTP,4,6,3,5,71,25.5,0
+North America,Windows,HTTP,26,9,14.5,10,179,103,0
 Asia,Linux,HTTP,3,3,1,0,179,103,0
 Asia,Linux,HTTP,4,6,7,1,111,112,0
 Asia,Linux,HTTP,4,6,4,2,263,72,0
 Africa,Linux,HTTP,21,4,5,6,179,103,0
-Asia,Windows,HTTP,49,6,15,10,268,72,0
+Asia,Windows,HTTP,49,6,14.5,10,268,72,0
 Africa,Linux,HTTP,40,2,7,1,179,92,0
 Africa,Mac,HTTP,6,4,9,8,179,110,0
-Asia,Mac,FTP,4,6,9,8,43,72,0
+Asia,Mac,FTP,4,6,9,8,61.5,72,0
 Africa,Linux,HTTP,6,4,8,3,179,103,0
 North America,Linux,HTTP,24,0,5,6,306,72,0
 South America,Linux,HTTP,42,7,7,1,71,72,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
 Africa,Linux,FTP,40,2,3,5,306,72,0
 South America,Linux,HTTP,44,1,9,8,205,103,0
-Asia,Linux,HTTP,24,0,8,3,43,97,0
+Asia,Linux,HTTP,24,0,8,3,61.5,97,0
 Asia,Linux,HTTP,49,6,2,7,263,72,0
 Asia,Linux,HTTP,35,3,1,0,179,72,0
 Asia,Linux,HTTP,4,6,6,4,200,72,0
 Asia,Linux,HTTP,49,6,6,4,179,72,0
 North America,Linux,HTTP,25,9,6,4,179,103,0
 Africa,Linux,HTTP,21,4,5,6,200,103,0
-Asia,Windows,HTTP,4,6,15,10,67,72,0
+Asia,Windows,HTTP,4,6,14.5,10,67,72,0
 South America,Linux,HTTP,51,7,7,1,120,103,0
-South America,Linux,HTTP,45,10,15,10,179,98,0
-North America,Linux,HTTP,37,0,7,1,179,12,0
+South America,Linux,HTTP,45,10,14.5,10,179,98,0
+North America,Linux,HTTP,37,0,7,1,179,25.5,0
 Africa,Linux,HTTP,6,4,4,2,263,112,0
-North America,Linux,HTTP,24,0,8,3,179,24,0
+North America,Linux,HTTP,24,0,8,3,179,25.5,0
 South America,Linux,HTTP,47,7,8,3,200,60,0
 Africa,Linux,HTTP,36,2,1,0,174,92,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
 Asia,Linux,HTTP,36,2,1,0,174,103,0
 Asia,Linux,HTTP,49,6,2,7,179,113,0
 Africa,Linux,HTTP,40,2,7,1,263,103,0
-Asia,Linux,HTTP,46,3,16,12,264,59,0
+Asia,Linux,HTTP,46,3,14.5,12,264,59,0
 North America,Linux,HTTP,16,0,5,6,179,103,0
-South America,Windows,HTTP,22,7,15,10,174,112,0
+South America,Windows,HTTP,22,7,14.5,10,174,112,0
 North America,Linux,HTTP,24,0,7,1,179,103,0
-Asia,Linux,HTTP,5,3,6,4,21,103,0
-North America,Linux,HTTP,18,9,8,3,128,18,0
+Asia,Linux,HTTP,5,3,6,4,61.5,103,0
+North America,Linux,HTTP,18,9,8,3,128,25.5,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
 North America,Linux,HTTP,37,0,3,5,263,113,0
 Africa,Linux,HTTP,36,2,4,2,303,92,0
@@ -650,130 +650,130 @@ Africa,Linux,HTTP,21,4,7,1,174,92,0
 Africa,Linux,HTTP,36,2,1,0,290,92,0
 North America,Linux,FTP,18,9,5,6,200,103,0
 Africa,Linux,HTTP,21,4,7,1,174,54,0
-Asia,Windows,HTTP,35,3,13,18,174,59,0
-South America,Windows,HTTP,45,10,15,10,182,103,0
-Asia,Linux,SMTP,4,6,6,4,67,24,0
-South America,Windows,HTTP,44,1,12,16,174,72,0
+Asia,Windows,HTTP,35,3,13,14.5,174,59,0
+South America,Windows,HTTP,45,10,14.5,10,182,103,0
+Asia,Linux,SMTP,4,6,6,4,67,25.5,0
+South America,Windows,HTTP,44,1,12,14.5,174,72,0
 Africa,Linux,HTTP,36,2,1,0,174,92,0
 North America,Linux,HTTP,26,9,3,5,179,72,0
 Africa,Linux,HTTP,36,2,1,0,174,92,0
 Asia,Linux,HTTP,35,3,2,7,200,103,0
 Asia,Linux,HTTP,5,3,3,5,174,103,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
-North America,Linux,HTTP,24,0,4,2,21,103,0
+North America,Linux,HTTP,24,0,4,2,61.5,103,0
 Asia,Linux,HTTP,4,6,3,5,306,54,0
 North America,Linux,HTTP,24,0,4,2,84,103,0
 Africa,Linux,HTTP,36,2,1,0,290,103,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
-South America,Windows,HTTP,2,10,16,12,159,67,0
+South America,Windows,HTTP,2,10,14.5,12,159,67,0
 Asia,Linux,HTTP,4,6,5,6,263,112,0
 Africa,Linux,HTTP,36,2,1,0,174,92,0
 Asia,Linux,HTTP,3,3,4,2,71,34,0
 South America,Linux,HTTP,27,1,6,4,135,103,0
-South America,Windows,HTTP,47,7,16,12,174,98,0
+South America,Windows,HTTP,47,7,14.5,12,174,98,0
 Asia,Linux,HTTP,15,3,6,4,306,72,0
 Asia,Linux,HTTP,4,6,2,7,263,103,0
-Asia,Windows,HTTP,4,6,15,10,263,103,0
-North America,Linux,HTTP,37,0,3,5,179,24,0
-South America,Linux,HTTP,38,10,8,3,43,34,0
-South America,Linux,HTTP,22,7,6,4,21,72,0
+Asia,Windows,HTTP,4,6,14.5,10,263,103,0
+North America,Linux,HTTP,37,0,3,5,179,25.5,0
+South America,Linux,HTTP,38,10,8,3,61.5,34,0
+South America,Linux,HTTP,22,7,6,4,61.5,72,0
 Africa,Linux,HTTP,21,4,7,1,200,98,0
 Africa,Linux,HTTP,6,4,6,4,179,112,0
-South America,Linux,HTTP,8,7,8,3,32,98,0
+South America,Linux,HTTP,8,7,8,3,61.5,98,0
 Asia,Linux,HTTP,4,6,2,7,200,72,0
 Asia,Linux,HTTP,49,6,4,2,179,103,0
-Africa,Windows,HTTP,36,2,15,10,174,92,0
-South America,Mac,HTTP,8,7,18,13,21,24,0
+Africa,Windows,HTTP,36,2,14.5,10,174,92,0
+South America,Mac,HTTP,8,7,14.5,13,61.5,25.5,0
 Asia,Linux,HTTP,4,6,1,0,67,72,0
-South America,Linux,HTTP,45,10,6,4,174,18,0
+South America,Linux,HTTP,45,10,6,4,174,25.5,0
 Africa,Linux,HTTP,6,4,5,6,174,59,0
 South America,Linux,HTTP,30,7,4,2,67,72,0
-South America,Windows,HTTP,20,10,16,12,111,103,0
-Asia,Linux,HTTP,49,6,7,1,21,103,0
+South America,Windows,HTTP,20,10,14.5,12,111,103,0
+Asia,Linux,HTTP,49,6,7,1,61.5,103,0
 North America,Linux,HTTP,24,0,8,3,174,92,0
 North America,Linux,HTTP,16,0,4,2,67,72,0
 Asia,Linux,HTTP,4,6,1,0,200,98,0
-Africa,Windows,HTTP,36,2,15,10,290,103,0
+Africa,Windows,HTTP,36,2,14.5,10,290,103,0
 Africa,Linux,HTTP,36,2,1,0,303,92,0
 Africa,Linux,HTTP,21,4,2,7,179,92,0
 Asia,Linux,HTTP,4,6,2,7,179,72,0
 South America,Linux,HTTP,44,1,2,7,200,98,0
 South America,Linux,HTTP,44,1,9,8,98,103,0
-South America,Windows,HTTP,45,10,16,12,111,103,0
-Asia,Linux,HTTP,4,6,4,2,43,98,0
-North America,Windows,HTTP,18,9,17,11,21,72,0
+South America,Windows,HTTP,45,10,14.5,12,111,103,0
+Asia,Linux,HTTP,4,6,4,2,61.5,98,0
+North America,Windows,HTTP,18,9,14.5,11,61.5,72,0
 South America,Linux,HTTP,19,1,6,4,128,103,0
 South America,Linux,HTTP,30,7,8,3,128,109,0
 Asia,Linux,HTTP,49,6,2,7,192,103,0
 North America,Linux,HTTP,17,0,7,1,179,103,0
 South America,Linux,HTTP,47,7,4,2,174,72,0
 Africa,Linux,HTTP,36,2,5,6,174,103,0
-South America,Linux,HTTP,19,4.358684480986639,9,8,263,74,0
+South America,Linux,HTTP,19,7.0,9,8,263,74,0
 Asia,Linux,HTTP,52,3,6,4,263,72,0
-Africa,Linux,HTTP,36,2,1,0,174,85.03571428571429,0
+Africa,Linux,HTTP,36,2,1,0,174,85.0,0
 Africa,Linux,HTTP,36,2,1,0,174,92,0
-Africa,Linux,HTTP,6,4,4,2,179,18,0
+Africa,Linux,HTTP,6,4,4,2,179,25.5,0
 North America,Linux,HTTP,18,9,3,5,174,103,0
-South America,Linux,HTTP,45,10,5.941598360655738,7,179,103,0
-Africa,Linux,HTTP,21,4,6,4,43,72,0
+South America,Linux,HTTP,45,10,6.0,7,179,103,0
+Africa,Linux,HTTP,21,4,6,4,61.5,72,0
 Asia,Linux,HTTP,46,3,6,4,98,103,0
-Asia,Linux,HTTP,25.38617886178862,6,2,7,263,72,0
+Asia,Linux,HTTP,25.0,6,2,7,263,72,0
 South America,Linux,HTTP,47,7,4,2,98,72,0
-North America,Linux,HTTP,37,0,3,5,43,85.03571428571429,0
-Africa,Linux,HTTP,36,2,1,4.994305239179955,174,103,0
-South America,Windows,HTTP,30,7,11,17,43,34,0
-North America,Linux,HTTP,26,9,4,2,263,10,0
-North America,Linux,HTTP,37,0,6,4.994305239179955,229,85.03571428571429,0
+North America,Linux,HTTP,37,0,3,5,61.5,85.0,0
+Africa,Linux,HTTP,36,2,1,5.0,174,103,0
+South America,Windows,HTTP,30,7,11,14.5,61.5,34,0
+North America,Linux,HTTP,26,9,4,2,263,25.5,0
+North America,Linux,HTTP,37,0,6,5.0,229,85.0,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
-Asia,Linux,HTTP,4,4.358684480986639,4,2,184,109,0
+Asia,Linux,HTTP,4,7.0,4,2,184,109,0
 Asia,Linux,HTTP,49,6,7,1,263,103,0
-Asia,Linux,HTTP,4,6,3,5,43,72,0
+Asia,Linux,HTTP,4,6,3,5,61.5,72,0
 Asia,Linux,HTTP,35,3,3,5,174,103,0
 Asia,Linux,HTTP,49,6,6,4,179,112,0
-Asia,Linux,HTTP,3,3,1,0,43,103,0
+Asia,Linux,HTTP,3,3,1,0,61.5,103,0
 Africa,Linux,HTTP,21,4,7,1,174,59,0
-North America,Linux,HTTP,18,9,5.941598360655738,1,132,103,0
-Asia,Linux,HTTP,4,6,2,7,43,103,0
+North America,Linux,HTTP,18,9,6.0,1,132,103,0
+Asia,Linux,HTTP,4,6,2,7,61.5,103,0
 North America,Linux,HTTP,37,0,6,4,179,72,0
 North America,Linux,HTTP,16,0,6,4,263,72,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
-Africa,Mac,HTTP,25.38617886178862,2,18,13,174,103,0
-Africa,Linux,HTTP,21,4,8,3,174,24,0
-South America,Linux,HTTP,11,7,2,7,174,24,0
+Africa,Mac,HTTP,25.0,2,14.5,13,174,103,0
+Africa,Linux,HTTP,21,4,8,3,174,25.5,0
+South America,Linux,HTTP,11,7,2,7,174,25.5,0
 Asia,Linux,HTTP,49,6,8,3,179,98,0
 North America,Linux,HTTP,16,0,8,3,111,103,0
-Asia,Windows,HTTP,25.38617886178862,3,15,10,263,103,0
-Asia,Linux,HTTP,49,6,5,6,128,18,0
-Asia,Linux,SSH,46,4.358684480986639,8,3,200,72,0
+Asia,Windows,HTTP,25.0,3,14.5,10,263,103,0
+Asia,Linux,HTTP,49,6,5,6,128,25.5,0
+Asia,Linux,SSH,46,7.0,8,3,200,72,0
 Africa,Linux,HTTP,6,4,5,6,179,103,0
 Africa,Linux,HTTP,36,2,1,0,174,92,0
-Africa,Linux,HTTP,36,2,5.941598360655738,4.994305239179955,174,18,0
-South America,Linux,HTTP,30,7,5,6,182.64424057084608,18,0
-Africa,Linux,HTTP,25.38617886178862,2,1,0,174,92,0
+Africa,Linux,HTTP,36,2,6.0,5.0,174,25.5,0
+South America,Linux,HTTP,30,7,5,6,183.0,25.5,0
+Africa,Linux,HTTP,25.0,2,1,0,174,92,0
 South America,Linux,HTTP,45,10,1,0,128,103,0
-Africa,Linux,HTTP,36,2,5.941598360655738,0,174,92,0
+Africa,Linux,HTTP,36,2,6.0,0,174,92,0
 South America,Linux,FTP,30,7,2,7,71,103,0
-South America,Linux,HTTP,25.38617886178862,4.358684480986639,5,6,182.64424057084608,31,0
-Africa,Linux,HTTP,36,2,5.941598360655738,0,174,92,0
+South America,Linux,HTTP,25.0,7.0,5,6,183.0,31,0
+Africa,Linux,HTTP,36,2,6.0,0,174,92,0
 Asia,Linux,HTTP,15,3,8,3,263,112,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
-Asia,Linux,HTTP,4,6,5,6,263,12,0
+Asia,Linux,HTTP,4,6,5,6,263,25.5,0
 Africa,Linux,HTTP,36,2,4,2,127,92,0
-South America,Windows,HTTP,47,7,17,11,174,72,0
-North America,Linux,HTTP,16,0,5,6,43,72,0
+South America,Windows,HTTP,47,7,14.5,11,174,72,0
+North America,Linux,HTTP,16,0,5,6,61.5,72,0
 Africa,Linux,HTTP,40,2,1,0,71,72,0
-Africa,Windows,HTTP,36,2,15,10,174,92,0
-North America,Linux,HTTP,26,9,3,5,58,98,0
-South America,Windows,HTTP,47,7,15,10,174,103,0
+Africa,Windows,HTTP,36,2,14.5,10,174,92,0
+North America,Linux,HTTP,26,9,3,5,61.5,98,0
+South America,Windows,HTTP,47,7,14.5,10,174,103,0
 Asia,Linux,HTTP,3,3,2,7,179,92,0
-Asia,Windows,HTTP,49,6,15,10,260,113,0
-North America,Linux,FTP,24,0,8,3,263,12,0
-South America,Linux,HTTP,8,7,5,6,192,18,0
+Asia,Windows,HTTP,49,6,14.5,10,260,113,0
+North America,Linux,FTP,24,0,8,3,263,25.5,0
+South America,Linux,HTTP,8,7,5,6,192,25.5,0
 Africa,Linux,HTTP,6,4,5,6,179,109,0
 Asia,Linux,FTP,39,6,8,3,268,103,0
 North America,Linux,HTTP,37,0,3,5,179,103,0
 Asia,Linux,HTTP,4,6,2,7,179,72,0
-Asia,Linux,HTTP,35,3,1,0,71,24,0
+Asia,Linux,HTTP,35,3,1,0,71,25.5,0
 South America,Linux,HTTP,45,10,1,0,192,72,0
 Asia,Linux,HTTP,49,6,4,2,179,109,0
 South America,Linux,HTTP,42,7,6,4,179,72,0
@@ -783,40 +783,40 @@ South America,Linux,HTTP,45,10,2,7,128,103,0
 Asia,Linux,HTTP,3,3,4,2,179,72,0
 South America,Linux,HTTP,45,10,3,5,179,34,0
 South America,Linux,HTTP,47,7,3,5,205,98,0
-Africa,Windows,HTTP,36,2,16,12,200,92,0
-North America,Windows,HTTP,24,0,15,10,158,103,0
+Africa,Windows,HTTP,36,2,14.5,12,200,92,0
+North America,Windows,HTTP,24,0,14.5,10,158,103,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
-Africa,Linux,HTTP,6,4,7,1,179,18,0
-North America,Windows,HTTP,14,9,13,18,106,103,0
+Africa,Linux,HTTP,6,4,7,1,179,25.5,0
+North America,Windows,HTTP,14,9,13,14.5,106,103,0
 Africa,Linux,HTTP,40,2,3,5,263,72,0
 Asia,Linux,HTTP,49,6,4,2,128,103,0
 Africa,Linux,HTTP,36,2,1,0,174,92,0
 Africa,Linux,HTTP,21,4,5,6,179,72,0
 Africa,Linux,HTTP,40,2,5,6,263,112,0
-North America,Linux,HTTP,25,9,6,4,11,103,0
+North America,Linux,HTTP,25,9,6,4,61.5,103,0
 Africa,Linux,HTTP,6,4,6,4,192,113,0
 Africa,Linux,HTTP,36,2,1,0,174,92,0
 North America,Linux,HTTP,24,0,5,6,179,103,0
 South America,Linux,HTTP,19,1,8,3,128,92,0
-Asia,Windows,HTTP,4,6,15,10,53,87,0
+Asia,Windows,HTTP,4,6,14.5,10,61.5,87,0
 North America,Linux,FTP,14,9,6,4,71,77,0
-South America,Mac,HTTP,44,1,18,13,164,72,0
+South America,Mac,HTTP,44,1,14.5,13,164,72,0
 North America,Linux,HTTP,37,0,2,7,179,103,0
-Asia,Linux,HTTP,4,6,6,4,43,72,0
+Asia,Linux,HTTP,4,6,6,4,61.5,72,0
 Africa,Linux,HTTP,6,4,6,4,179,95,0
 North America,Linux,HTTP,14,9,5,6,174,103,0
-Asia,Linux,HTTP,4,6,4,2,21,103,0
-Africa,Linux,HTTP,6,4,6,4,21,109,0
-Asia,Linux,HTTP,3,3,7,1,179,24,0
-North America,Linux,HTTP,24,0,5,6,268,12,0
+Asia,Linux,HTTP,4,6,4,2,61.5,103,0
+Africa,Linux,HTTP,6,4,6,4,61.5,109,0
+Asia,Linux,HTTP,3,3,7,1,179,25.5,0
+North America,Linux,HTTP,24,0,5,6,268,25.5,0
 Africa,Linux,HTTP,23,4,9,8,306,92,0
 South America,Linux,HTTP,30,7,8,3,200,98,0
-North America,Windows,HTTP,24,0,15,10,263,103,0
+North America,Windows,HTTP,24,0,14.5,10,263,103,0
 Africa,Linux,HTTP,21,4,2,7,179,103,0
-North America,Linux,HTTP,24,0,7,1,11,103,0
+North America,Linux,HTTP,24,0,7,1,61.5,103,0
 Africa,Linux,HTTP,21,4,6,4,71,98,0
 Asia,Linux,HTTP,28,3,5,6,200,98,0
-South America,Windows,HTTP,47,7,15,10,179,18,0
+South America,Windows,HTTP,47,7,14.5,10,179,25.5,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
 Asia,Linux,HTTP,49,6,6,4,82,77,0
 South America,Linux,HTTP,47,7,4,2,200,72,0
@@ -826,119 +826,119 @@ Africa,Linux,HTTP,36,2,1,0,174,92,0
 Africa,Mac,HTTP,21,4,9,8,97,59,0
 Africa,Linux,HTTP,6,4,5,6,179,34,0
 South America,Mac,HTTP,47,7,9,8,98,110,0
-Africa,Linux,HTTP,41,4,4,2,174,18,0
-Africa,Linux,HTTP,21,4,2,7,263,12,0
+Africa,Linux,HTTP,41,4,4,2,174,25.5,0
+Africa,Linux,HTTP,21,4,2,7,263,25.5,0
 Asia,Linux,HTTP,4,6,1,0,71,72,0
-South America,Windows,HTTP,51,7,11,17,200,67,0
-Africa,Linux,HTTP,32,4,7,1,11,103,0
+South America,Windows,HTTP,51,7,11,14.5,200,67,0
+Africa,Linux,HTTP,32,4,7,1,61.5,103,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
 Africa,Linux,HTTP,21,4,2,7,263,72,0
 Asia,Linux,HTTP,4,6,6,4,263,116,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
-South America,Windows,HTTP,47,7,12,16,82,103,0
+South America,Windows,HTTP,47,7,12,14.5,82,103,0
 Africa,Linux,HTTP,21,4,5,6,174,98,0
 Africa,Linux,HTTP,40,2,7,1,263,103,0
-South America,Linux,HTTP,38,10,3,5,21,98,0
+South America,Linux,HTTP,38,10,3,5,61.5,98,0
 North America,Linux,HTTP,37,0,7,1,179,103,0
-North America,Linux,HTTP,16,0,5,6,60,103,0
-Africa,Linux,HTTP,40,2,3,5,43,72,0
+North America,Linux,HTTP,16,0,5,6,61.5,103,0
+Africa,Linux,HTTP,40,2,3,5,61.5,72,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
 North America,Linux,HTTP,26,9,6,4,158,103,0
 Africa,Linux,HTTP,36,2,6,4,174,103,0
 Asia,Linux,HTTP,49,6,5,6,200,98,0
 Asia,Linux,HTTP,4,6,4,2,145,103,0
 Africa,Linux,HTTP,36,2,1,0,174,92,0
-Asia,Windows,HTTP,4,6,15,10,145,103,0
-North America,Windows,HTTP,18,9,13,18,174,72,0
-Africa,Linux,HTTP,6,4,6,4,128,18,0
-Africa,Windows,HTTP,36,2,15,10,174,92,0
+Asia,Windows,HTTP,4,6,14.5,10,145,103,0
+North America,Windows,HTTP,18,9,13,14.5,174,72,0
+Africa,Linux,HTTP,6,4,6,4,128,25.5,0
+Africa,Windows,HTTP,36,2,14.5,10,174,92,0
 North America,Linux,HTTP,37,0,2,7,179,103,0
 South America,Linux,HTTP,19,1,7,1,174,103,0
 Asia,Linux,HTTP,4,6,1,0,71,103,0
 North America,Linux,HTTP,50,0,6,4,205,92,0
 North America,Linux,HTTP,18,9,6,4,206,102,0
-Africa,Windows,HTTP,36,2,15,10,174,92,0
+Africa,Windows,HTTP,36,2,14.5,10,174,92,0
 Asia,Linux,HTTP,49,6,7,1,128,103,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
 Africa,Mac,HTTP,6,4,9,8,200,98,0
 Asia,Linux,HTTP,49,6,2,7,179,103,0
 South America,Linux,HTTP,45,10,7,1,263,112,0
-Asia,Windows,HTTP,49,6,15,10,179,103,0
-South America,Windows,HTTP,47,7,15,10,179,103,0
-South America,Windows,HTTP,30,7,11,17,179,103,0
+Asia,Windows,HTTP,49,6,14.5,10,179,103,0
+South America,Windows,HTTP,47,7,14.5,10,179,103,0
+South America,Windows,HTTP,30,7,11,14.5,179,103,0
 Asia,Linux,HTTP,4,6,6,4,179,103,0
 North America,Linux,HTTP,24,0,5,6,263,103,0
 Africa,Linux,HTTP,36,2,1,0,174,92,0
 Asia,Linux,HTTP,4,6,2,7,261,72,0
 Asia,Linux,HTTP,5,3,8,3,179,103,0
 Africa,Linux,HTTP,36,2,1,0,174,92,0
-Africa,Linux,HTTP,36,2,1,0,174,18,0
-South America,Windows,HTTP,30,7,11,17,179,103,0
-North America,Windows,HTTP,37,0,11,17,223,103,0
-Asia,Linux,FTP,4,6,2,7,43,72,0
+Africa,Linux,HTTP,36,2,1,0,174,25.5,0
+South America,Windows,HTTP,30,7,11,14.5,179,103,0
+North America,Windows,HTTP,37,0,11,14.5,223,103,0
+Asia,Linux,FTP,4,6,2,7,61.5,72,0
 Asia,Linux,HTTP,4,6,2,7,306,72,0
-South America,Windows,HTTP,19,1,12,16,200,103,0
-North America,Linux,HTTP,16,0,4,2,43,72,0
+South America,Windows,HTTP,19,1,12,14.5,200,103,0
+North America,Linux,HTTP,16,0,4,2,61.5,72,0
 Africa,Linux,HTTP,40,2,6,4,179,103,0
-South America,Windows,HTTP,47,7,12,16,79,10,0
-South America,Windows,HTTP,47,7,15,10,174,24,0
+South America,Windows,HTTP,47,7,12,14.5,79,25.5,0
+South America,Windows,HTTP,47,7,14.5,10,174,25.5,0
 Asia,Linux,HTTP,39,6,5,6,98,72,0
-North America,Linux,HTTP,50,0,4,2,21,72,0
+North America,Linux,HTTP,50,0,4,2,61.5,72,0
 Africa,Linux,HTTP,36,2,1,0,174,92,0
-Asia,Windows,HTTP,3,3,16,12,175,24,0
+Asia,Windows,HTTP,3,3,14.5,12,175,25.5,0
 South America,Linux,HTTP,47,7,3,5,268,77,0
 South America,Linux,HTTP,38,10,5,6,200,72,0
 Africa,Linux,HTTP,6,4,6,4,179,72,0
-Asia,Windows,HTTP,49,6,15,10,179,103,0
+Asia,Windows,HTTP,49,6,14.5,10,179,103,0
 Africa,Linux,HTTP,40,2,3,5,71,72,0
 Asia,Linux,HTTP,39,6,4,2,200,72,0
 North America,Linux,HTTP,37,0,2,7,179,103,0
-Africa,Windows,HTTP,36,2,15,10,174,92,0
+Africa,Windows,HTTP,36,2,14.5,10,174,92,0
 North America,Linux,HTTP,18,9,6,4,82,84,0
 North America,Mac,HTTP,14,9,9,8,179,112,0
 Asia,Linux,HTTP,4,6,5,6,179,103,0
 Asia,Linux,HTTP,49,6,2,7,179,92,0
-Africa,Linux,HTTP,21,4,5,6,43,103,0
-Africa,Windows,HTTP,36,2,15,10,174,103,0
+Africa,Linux,HTTP,21,4,5,6,61.5,103,0
+Africa,Windows,HTTP,36,2,14.5,10,174,103,0
 North America,Linux,HTTP,16,0,5,6,179,103,0
 Africa,Linux,HTTP,21,4,2,7,260,92,0
-Africa,Mac,HTTP,40,2,16,12,128,92,0
-Africa,Linux,HTTP,6,4,4,2,43,112,0
-North America,Linux,HTTP,37,0,3,5,179,18,0
-Asia,Linux,HTTP,4,6,2,7,50,54,0
-South America,Linux,HTTP,38,10,5,6,33,103,0
-North America,Linux,HTTP,25,9,8,3,21,103,0
-Asia,Linux,HTTP,4,6,2,7,67,12,0
+Africa,Mac,HTTP,40,2,14.5,12,128,92,0
+Africa,Linux,HTTP,6,4,4,2,61.5,112,0
+North America,Linux,HTTP,37,0,3,5,179,25.5,0
+Asia,Linux,HTTP,4,6,2,7,61.5,54,0
+South America,Linux,HTTP,38,10,5,6,61.5,103,0
+North America,Linux,HTTP,25,9,8,3,61.5,103,0
+Asia,Linux,HTTP,4,6,2,7,67,25.5,0
 Asia,Linux,HTTP,4,6,5,6,111,34,0
-Asia,Linux,HTTP,4,6,2,7,174,24,0
+Asia,Linux,HTTP,4,6,2,7,174,25.5,0
 Asia,Linux,HTTP,4,6,1,0,67,103,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
 Africa,Linux,HTTP,36,2,1,0,174,92,0
 Asia,Linux,HTTP,4,6,4,2,179,103,0
 South America,Linux,HTTP,30,7,6,4,67,72,0
-South America,Windows,HTTP,47,7,15,10,207,103,0
+South America,Windows,HTTP,47,7,14.5,10,207,103,0
 South America,Linux,FTP,38,10,5,6,71,34,0
 Asia,Linux,HTTP,4,6,6,4,263,113,0
-Africa,Windows,HTTP,36,2,15,10,290,103,0
+Africa,Windows,HTTP,36,2,14.5,10,290,103,0
 Africa,Linux,HTTP,36,2,6,4,174,103,0
-Asia,Windows,HTTP,5,3,16,12,179,103,0
+Asia,Windows,HTTP,5,3,14.5,12,179,103,0
 Africa,Linux,HTTP,36,2,1,0,174,92,0
-Asia,Windows,HTTP,4,6,11,17,43,72,0
+Asia,Windows,HTTP,4,6,11,14.5,61.5,72,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
-North America,Linux,HTTP,16,0,4,2,263,12,0
-South America,Linux,FTP,2,10,8,3,21,103,0
+North America,Linux,HTTP,16,0,4,2,263,25.5,0
+South America,Linux,FTP,2,10,8,3,61.5,103,0
 Africa,Linux,HTTP,40,2,3,5,200,72,0
-Asia,Windows,HTTP,5,3,16,12,263,87,0
+Asia,Windows,HTTP,5,3,14.5,12,263,87,0
 Asia,Linux,HTTP,4,6,1,0,263,72,0
 Africa,Linux,HTTP,36,2,1,0,174,92,0
 North America,Mac,HTTP,37,0,9,8,179,112,0
 Africa,Linux,HTTP,36,2,9,8,303,92,0
-South America,Windows,HTTP,38,10,12,16,58,72,0
-South America,Linux,HTTP,45,10,5,6,21,72,0
-Asia,Linux,HTTP,3,3,1,0,43,72,0
+South America,Windows,HTTP,38,10,12,14.5,61.5,72,0
+South America,Linux,HTTP,45,10,5,6,61.5,72,0
+Asia,Linux,HTTP,3,3,1,0,61.5,72,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
-Asia,Linux,HTTP,4,6,6,4,16,103,0
+Asia,Linux,HTTP,4,6,6,4,61.5,103,0
 North America,Linux,HTTP,37,0,3,5,179,103,0
 Asia,Linux,HTTP,5,3,2,7,73,98,0
 Asia,Linux,HTTP,4,6,1,0,111,103,0
@@ -946,14 +946,14 @@ South America,Linux,HTTP,30,7,7,1,179,103,0
 Asia,Linux,HTTP,47,7,3,5,205,98,0
 Africa,Linux,HTTP,23,4,7,1,263,72,0
 Asia,Linux,HTTP,49,6,6,4,320,103,0
-Asia,Linux,HTTP,4,6,15,10,263,72,0
+Asia,Linux,HTTP,4,6,14.5,10,263,72,0
 Asia,Linux,HTTP,46,3,4,2,82,109,0
 Africa,Linux,HTTP,36,2,1,0,174,92,0
-Africa,Windows,HTTP,36,2,15,10,174,92,0
+Africa,Windows,HTTP,36,2,14.5,10,174,92,0
 Africa,Linux,HTTP,40,2,3,5,263,72,0
 North America,Linux,HTTP,24,0,5,6,179,103,0
 Asia,Linux,HTTP,30,7,8,3,71,72,0
-South America,Linux,HTTP,47,7,16,12,111,103,0
+South America,Linux,HTTP,47,7,14.5,12,111,103,0
 Africa,Linux,HTTP,36,2,1,0,174,103,0
 Africa,Linux,HTTP,6,4,5,6,263,92,0
 Africa,Linux,HTTP,6,4,4,2,179,103,0
@@ -961,15 +961,15 @@ South America,Linux,HTTP,45,10,6,4,179,103,0
 Asia,Linux,HTTP,25,9,3,5,306,72,0
 Asia,Linux,HTTP,4,6,2,7,263,72,0
 Africa,Linux,HTTP,6,4,5,6,179,72,0
-Asia,Linux,HTTP,44,1,2,7,21,98,0
+Asia,Linux,HTTP,44,1,2,7,61.5,98,0
 Asia,Linux,HTTP,4,6,6,4,132,112,0
-North America,Linux,HTTP,37,0,17,11,179,103,0
+North America,Linux,HTTP,37,0,14.5,11,179,103,0
 South America,Linux,HTTP,30,7,4,2,145,103,0
 Asia,Linux,HTTP,49,6,2,7,179,103,0
-Africa,Linux,HTTP,36,2,15,10,174,103,0
+Africa,Linux,HTTP,36,2,14.5,10,174,103,0
 Asia,Linux,HTTP,4,6,1,0,67,112,0
 Asia,Linux,HTTP,4,6,5,6,263,112,0
-North America,Windows,HTTP,24,0,15,10,179,109,0
+North America,Windows,HTTP,24,0,14.5,10,179,109,0
 Africa,Linux,HTTP,6,4,5,6,179,92,0
 South America,Linux,HTTP,47,7,3,5,204,103,0
 Asia,Linux,HTTP,36,2,1,0,174,103,0
@@ -982,17 +982,17 @@ Asia,Linux,HTTP,46,3,6,4,158,103,0
 South America,Linux,HTTP,38,10,3,5,200,72,0
 Asia,Linux,HTTP,45,10,3,5,179,116,0
 North America,Linux,HTTP,24,0,8,3,328,72,0
-Africa,Linux,HTTP,6,4,6,4,43,98,0
+Africa,Linux,HTTP,6,4,6,4,61.5,98,0
 Africa,Linux,HTTP,40,2,3,5,263,112,0
 South America,Linux,HTTP,45,10,5,6,104,103,0
 Asia,Linux,HTTP,36,2,4,2,174,103,0
 Asia,Linux,HTTP,4,6,5,6,179,72,0
-Asia,Linux,HTTP,24,0,4,2,21,13,0
+Asia,Linux,HTTP,24,0,4,2,61.5,25.5,0
 North America,Linux,HTTP,37,0,3,5,179,98,0
-South America,Windows,HTTP,47,7,15,10,174,112,0
-Africa,Windows,HTTP,36,2,15,10,174,92,0
-Asia,Linux,HTTP,49,6,4,2,21,103,0
-Asia,Windows,HTTP,4,6,15,10,263,72,0
+South America,Windows,HTTP,47,7,14.5,10,174,112,0
+Africa,Windows,HTTP,36,2,14.5,10,174,92,0
+Asia,Linux,HTTP,49,6,4,2,61.5,103,0
+Asia,Windows,HTTP,4,6,14.5,10,263,72,0
 North America,Linux,HTTP,37,0,4,2,268,103,0
-South America,Windows,HTTP,19,1,11,17,76,103,0
-Asia,Linux,HTTP,35,3,4,2,21,34,0
+South America,Windows,HTTP,19,1,11,14.5,76,103,0
+Asia,Linux,HTTP,35,3,4,2,61.5,34,0

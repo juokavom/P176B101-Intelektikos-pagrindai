@@ -16,22 +16,43 @@ def append_element_to_headers(headers, values):
     return element
 
 
+def handle_noise(data, sublist, header):
+    q1 = np.quantile(sublist, .25)
+    q3 = np.quantile(sublist, .75)
+    lower = q1 - 1.5 * (q3 - q1)
+    upper = q3 + 1.5 * (q3 - q1)
+    for u in data:  # Triukšmai priskiriami viršutiniams ir apatiniams rėžiams duomenų faile
+        if int(u[header]) < lower:
+            u[header] = lower
+        elif int(u[header]) > upper:
+            u[header] = upper
+    for i in range(len(sublist)):  # Triukšmai priskiriami viršutiniams ir apatiniams rėžiams nagrinėjamame atribute
+        if sublist[i] < lower:
+            sublist[i] = lower
+        elif sublist[i] > upper:
+            sublist[i] = upper
+    sublist.sort()
+    return q1, q3
+
+
 def analyse_continuous_data(data, values):
     csv_list = []
     for i in values.keys():
         sublist = list(map(lambda x: int(x[i]) if x[i] != '' else '', data))
         average = np.average(list(filter(lambda x: x != '', sublist)))
-        sublist = list(map(lambda x: average if x == '' else x, sublist))
+        sublist = list(map(lambda x: np.round(average) if x == '' else x, sublist))
         for u in data:  # Tuščios reikšmės užpildomos vidurkiais
             if u[i] == '':
-                u[i] = average
+                u[i] = np.round(average)
         sublist.sort()
-        values[i][2] = values[i][2] * 100
+        q1, q3 = handle_noise(data, sublist, i)
+        values[i][2] = values[i][2] * 100 #Trukstamos reiksmes paverciamos %
+        values[i].append(len(set(sublist)))  # Kardinalumas
         values[i].append(min(sublist))  # Minimali reikšmė
         values[i].append(max(sublist))  # Maksimali reikšmė
-        values[i].append(np.quantile(sublist, .25))  # 1-asis kvartilis
-        values[i].append(np.quantile(sublist, .75))  # 3-asis kvartilis
-        values[i].append(average)  # Vidurkis
+        values[i].append(q1)  # 1-asis kvartilis
+        values[i].append(q3)  # 3-asis kvartilis
+        values[i].append(np.average(sublist))  # Vidurkis
         values[i].append(np.round(np.median(sublist)))  # Mediana
         values[i].append(np.std(sublist))  # Standartinis nuokrypis
         csv_list.append(append_element_to_headers(c.CONTINUOUS_ANALYSIS_OUTPUT_HEADERS, values[i]))
@@ -61,7 +82,8 @@ def analyse_categorical_data(data, values):
         for u in data:  # Tuščios reikšmės užpildomos vidurkiais
             if u[i] == '':
                 u[i] = moda
-        values[i][2] = values[i][2] * 100
+        values[i][2] = values[i][2] * 100 # Trukstamos reiksmes paverciamos %
+        values[i].append(len(set(sublist)))  # Kardinalumas
         all_modas(sublist, values[i])  # 1-oji ir 2-oji modos su charakteristikomis
         csv_list.append(append_element_to_headers(c.CATEGORICAL_ANALYSIS_OUTPUT_HEADERS, values[i]))
     return csv_list
@@ -73,13 +95,9 @@ def analyze_initial_values(data, headers):
         sublist = list(map(lambda x: x[i], data))
         values[i] = [
             i,  # Atributo pavadinimas
-
             len(sublist),  # Eilučių kiekis
             len(list(filter(lambda x: x == '', sublist))) / len(sublist),  # Trūkstamos reikšmės
         ]
-        cardinality = list(set(sublist))
-        cardinality.remove('')
-        values[i].append(len(cardinality))  # Kardinalumas
     return values
 
 
