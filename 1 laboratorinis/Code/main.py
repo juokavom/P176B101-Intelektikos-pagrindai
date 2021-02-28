@@ -5,6 +5,7 @@
 from functools import reduce
 import numpy as np
 import constants as c
+import matplotlib.pyplot as plt
 import handler
 
 
@@ -73,7 +74,6 @@ def analyze_initial_values(data, headers):
         values[i] = [
             i,  # Atributo pavadinimas
 
-
             len(sublist),  # Eilučių kiekis
             len(list(filter(lambda x: x == '', sublist))) / len(sublist),  # Trūkstamos reikšmės
         ]
@@ -117,6 +117,15 @@ def handle_missing_values(data, continuous, continuous_headers, categorical, cat
                      0.6)  # Vertikalus šalinimas (jei 60% stulpelio tuščia)
 
 
+def draw_histograms(data, headers):
+    n = round(1 + 3.22 * np.log(len(data)))
+    for head in headers:
+        sublist = list(map(lambda x: x[head], data))
+        plt.title(head)
+        plt.hist(sublist, bins=n)
+        plt.show()
+
+
 # Nuskaitomas duomenų failas
 dataset, fields = handler.csv_to_dict_list(c.DATASET_TRAIN_FILE)
 # Sukuriamas išvedimo folderis
@@ -148,3 +157,5 @@ final_headers.append('MALICIOUS_OFFENSE')
 
 # Išvedami pertvarkyti duomenys .csv formatu
 handler.write_to_csv(c.PROCESSED_OUTPUT_PATH, dataset, final_headers)
+
+draw_histograms(dataset, final_headers)
