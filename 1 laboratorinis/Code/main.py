@@ -7,6 +7,9 @@ import numpy as np
 import constants as c
 import matplotlib.pyplot as plt
 import handler
+import seaborn as sns
+import plotly.graph_objects as go
+import pandas as pd
 
 
 def append_element_to_headers(headers, values):
@@ -46,7 +49,7 @@ def analyse_continuous_data(data, values):
                 u[i] = np.round(average)
         sublist.sort()
         q1, q3 = handle_noise(data, sublist, i)
-        values[i][2] = values[i][2] * 100 #Trukstamos reiksmes paverciamos %
+        values[i][2] = values[i][2] * 100  # Trukstamos reiksmes paverciamos %
         values[i].append(len(set(sublist)))  # Kardinalumas
         values[i].append(min(sublist))  # Minimali reikšmė
         values[i].append(max(sublist))  # Maksimali reikšmė
@@ -82,7 +85,7 @@ def analyse_categorical_data(data, values):
         for u in data:  # Tuščios reikšmės užpildomos vidurkiais
             if u[i] == '':
                 u[i] = moda
-        values[i][2] = values[i][2] * 100 # Trukstamos reiksmes paverciamos %
+        values[i][2] = values[i][2] * 100  # Trukstamos reiksmes paverciamos %
         values[i].append(len(set(sublist)))  # Kardinalumas
         all_modas(sublist, values[i])  # 1-oji ir 2-oji modos su charakteristikomis
         csv_list.append(append_element_to_headers(c.CATEGORICAL_ANALYSIS_OUTPUT_HEADERS, values[i]))
@@ -144,6 +147,43 @@ def draw_histograms(data, headers):
         plt.show()
 
 
+def draw_scatters(data, headers):
+    for i in range(len(headers)):
+        x1 = list(map(lambda x: int(x[headers[i]]), data))
+        plt.rcParams.update({'figure.figsize': (10, 8), 'figure.dpi': 100})
+        for u in range(len(headers)):
+            if u == i:
+                continue
+            x2 = list(map(lambda x: int(x[headers[u]]), data))
+            plt.scatter(x1, x2, label=headers[u] + f' koreliacija = {np.round(np.corrcoef(x1, x2)[0, 1], 2)}')
+            plt.title(headers[i] + ' ir ' + headers[u])
+            plt.legend()
+            plt.show()
+
+
+def draw_splom(df, headers):
+    splom_dimensions = []
+    for i in headers:
+        splom_dimensions.append(dict(label=i, values=list(map(lambda x: x[i], df))))
+
+    fig = go.Figure(data=go.Splom(
+        dimensions=splom_dimensions,
+        text='SPLOM diagrama',
+        marker=dict(showscale=False,  # colors encode categorical variables
+                    line_color='white', line_width=0.5)
+    ))
+
+    fig.update_layout(
+        title='SPLOM diagrama',
+        dragmode='select',
+        width=600,
+        height=600,
+        hovermode='closest',
+    )
+
+    fig.show()
+
+
 # Nuskaitomas duomenų failas
 dataset, fields = handler.csv_to_dict_list(c.DATASET_TRAIN_FILE)
 # Sukuriamas išvedimo folderis
@@ -176,4 +216,9 @@ final_headers.append('MALICIOUS_OFFENSE')
 # Išvedami pertvarkyti duomenys .csv formatu
 handler.write_to_csv(c.PROCESSED_OUTPUT_PATH, dataset, final_headers)
 
-draw_histograms(dataset, final_headers)
+# # Braižyti histogramas
+# draw_histograms(dataset, final_headers)
+# # Braižyti scatter plot
+# draw_scatters(dataset, list(continuous.keys()))
+# SPLOM diagramos braižymas
+draw_splom(dataset, list(continuous.keys()))
