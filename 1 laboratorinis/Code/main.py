@@ -270,6 +270,18 @@ def calculate_cov_and_cor(data, headers):
     return csv_cov, csv_cor
 
 
+def convert_cat_to_cont(data, headers):
+    for head in headers:
+        unique_category = list(set(map(lambda x: x[head], data)))
+        print(unique_category)
+        indexes = {}
+        counter = 0
+        for uc in unique_category:
+            indexes[uc] = counter
+            counter += 1
+        for i in range(len(data)):
+            data[i][head] = indexes[data[i][head]]
+
 # ---DUOMENŲ APDOROJIMAS--- #
 
 # Nuskaitomas duomenų failas
@@ -317,13 +329,18 @@ handler.write_to_csv(c.PROCESSED_OUTPUT_PATH, dataset, final_headers)
 # # Braižyti boxplotus kategoriniams pagal tolydinius atributus
 # draw_boxplot(dataset, list(continuous.keys()), list(categorical.keys()))
 
-# Skaiciuoti kovariacijos ir koreliacijos reiksmes
-csv_cov, csv_cor = calculate_cov_and_cor(dataset, continuous.keys())
+# # Skaiciuoti kovariacijos ir koreliacijos reiksmes
+# csv_cov, csv_cor = calculate_cov_and_cor(dataset, continuous.keys())
+#
+# final_headers = ['']
+# for i in continuous.keys():
+#     final_headers.append(i)
+#
+# # Išvesti kovariacijos ir koreliacijos matricas į rezultatų failus
+# handler.write_to_csv(c.COVARIANCE_OUTPUT_PATH, csv_cov, final_headers)
+# handler.write_to_csv(c.CORRELATION_OUTPUT_PATH, csv_cor, final_headers)
 
-final_headers = ['']
-for i in continuous.keys():
-    final_headers.append(i)
+# Kategorinio tipo kintamieji verciami tolydinio
+convert_cat_to_cont(dataset, categorical.keys())
 
-# Išvesti kovariacijos ir koreliacijos matricas į rezultatų failus
-handler.write_to_csv(c.COVARIANCE_OUTPUT_PATH, csv_cov, final_headers)
-handler.write_to_csv(c.CORRELATION_OUTPUT_PATH, csv_cor, final_headers)
+# Atliekama duomenu normalizacija
