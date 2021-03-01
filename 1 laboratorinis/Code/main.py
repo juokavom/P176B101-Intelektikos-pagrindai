@@ -220,11 +220,6 @@ def draw_histograms_categorical(data, continuous_headers, categorical_headers):
                 plt.ylabel(cat)
                 plt.show()
 
-    n = round(1 + 3.22 * np.log(len(data)))
-    for head in headers:
-        sublist = list(map(lambda x: x[head], data))
-        c
-
 
 def draw_boxplot(data, continuous_headers, categorical_headers):
     for cont in continuous_headers:
@@ -249,6 +244,30 @@ def draw_boxplot(data, continuous_headers, categorical_headers):
             plt.ylabel(cont)
             plt.xticks(count, titles)
             plt.show()
+
+
+def calculate_cov_and_cor(data, headers):
+    csv_cov = []
+    csv_cor = []
+    clean_dataset = {}
+    for head in headers:
+        sublist = list(map(lambda x: float(x[head]), data))
+        clean_dataset[head] = sublist
+        covariance = {}
+        correlation = {}
+        covariance[''] = head
+        correlation[''] = head
+        for head2 in headers:
+            sublist2 = list(map(lambda x: float(x[head2]), data))
+            covariance[head2] = np.cov(sublist, sublist2)[0][1]
+            correlation[head2] = np.corrcoef(sublist, sublist2)[0][1]
+        csv_cov.append(covariance)
+        csv_cor.append(correlation)
+    df = pd.DataFrame(clean_dataset)
+    corrMatrix = df.corr()
+    sns.heatmap(corrMatrix, annot=True)
+    plt.show()
+    return csv_cov, csv_cor
 
 
 # ---DUOMENŲ APDOROJIMAS--- #
@@ -297,3 +316,14 @@ handler.write_to_csv(c.PROCESSED_OUTPUT_PATH, dataset, final_headers)
 # draw_histograms_categorical(dataset, list(continuous.keys()), list(categorical.keys()))
 # # Braižyti boxplotus kategoriniams pagal tolydinius atributus
 # draw_boxplot(dataset, list(continuous.keys()), list(categorical.keys()))
+
+# Skaiciuoti kovariacijos ir koreliacijos reiksmes
+csv_cov, csv_cor = calculate_cov_and_cor(dataset, continuous.keys())
+
+final_headers = ['']
+for i in continuous.keys():
+    final_headers.append(i)
+
+# Išvesti kovariacijos ir koreliacijos matricas į rezultatų failus
+handler.write_to_csv(c.COVARIANCE_OUTPUT_PATH, csv_cov, final_headers)
+handler.write_to_csv(c.CORRELATION_OUTPUT_PATH, csv_cor, final_headers)

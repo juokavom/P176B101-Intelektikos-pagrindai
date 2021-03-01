@@ -15,3 +15,5 @@ CONTINUOUS_ANALYSIS_OUTPUT_HEADERS = ['Atributo pavadinimas', 'Kiekis (Eilučių
                                   '3-asis kvartilis', 'Vidurkis', 'Mediana', 'Standartinis nuokrypis']
 # ----
 PROCESSED_OUTPUT_PATH: str = OUTPUT_FOLDER_NAME + '/apdoroti_duomenys.csv'
+COVARIANCE_OUTPUT_PATH: str = OUTPUT_FOLDER_NAME + '/kovariacijos_matrica.csv'
+CORRELATION_OUTPUT_PATH: str = OUTPUT_FOLDER_NAME + '/koreliacijos_matrica.csv'
