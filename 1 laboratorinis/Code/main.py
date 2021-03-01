@@ -273,7 +273,6 @@ def calculate_cov_and_cor(data, headers):
 def convert_cat_to_cont(data, headers):
     for head in headers:
         unique_category = list(set(map(lambda x: x[head], data)))
-        print(unique_category)
         indexes = {}
         counter = 0
         for uc in unique_category:
@@ -281,6 +280,15 @@ def convert_cat_to_cont(data, headers):
             counter += 1
         for i in range(len(data)):
             data[i][head] = indexes[data[i][head]]
+
+
+def normalize_values(data, headers):
+    for head in headers:
+        sublist = list(map(lambda x: float(x[head]), data))
+        min = np.min(sublist)
+        max = np.max(sublist)
+        for i in range(len(data)):
+            data[i][head] = (float(data[i][head]) - min) / max
 
 # ---DUOMENŲ APDOROJIMAS--- #
 
@@ -343,4 +351,14 @@ handler.write_to_csv(c.PROCESSED_OUTPUT_PATH, dataset, final_headers)
 # Kategorinio tipo kintamieji verciami tolydinio
 convert_cat_to_cont(dataset, categorical.keys())
 
+final_headers = []
+for i in categorical.keys():
+    final_headers.append(i)
+for i in continuous.keys():
+    final_headers.append(i)
 # Atliekama duomenu normalizacija
+normalize_values(dataset, final_headers)
+
+final_headers.append('MALICIOUS_OFFENSE')
+# Išvedami noramlizuoti duomenys .csv formatu
+handler.write_to_csv(c.PROCESSED_NORMALIZED_OUTPUT_PATH, dataset, final_headers)
