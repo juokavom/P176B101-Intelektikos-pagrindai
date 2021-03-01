@@ -185,7 +185,6 @@ def draw_splom(df, headers):
 
 
 def draw_barplot(data, headers):
-
     for head in range(len(headers)):
         sublist = list(map(lambda x: x[headers[head]], data))
         categories = list(set(sublist))
@@ -207,7 +206,54 @@ def draw_barplot(data, headers):
                 plt.show()
 
 
-            # Nuskaitomas duomenų failas
+def draw_histograms_categorical(data, continuous_headers, categorical_headers):
+    for cat in categorical_headers:
+        sublist = list(map(lambda x: x[cat], data))
+        categories = list(set(sublist))
+        for cat2 in categories:
+            for cont in continuous_headers:
+                sublist2 = list(
+                    filter(lambda y: y != '', list(map(lambda x: int(x[cont]) if x[cat] == cat2 else '', data))))
+                plt.title('Kategorinis atributas: ' + cat + ':' + cat2 + ', tolydus atributas: ' + cont)
+                plt.hist(sublist2)
+                plt.xlabel(cont)
+                plt.ylabel(cat)
+                plt.show()
+
+    n = round(1 + 3.22 * np.log(len(data)))
+    for head in headers:
+        sublist = list(map(lambda x: x[head], data))
+        c
+
+
+def draw_boxplot(data, continuous_headers, categorical_headers):
+    for cont in continuous_headers:
+        for cat in categorical_headers:
+            sublist = list(map(lambda x: x[cat], data))
+            categories = list(set(sublist))
+            df = []
+            counter = 1
+            count = []
+            titles = []
+            for cat2 in categories:
+                sublist2 = list(
+                    filter(lambda y: y != '', list(map(lambda x: int(x[cont]) if x[cat] == cat2 else '', data))))
+                df.append(sublist2)
+                titles.append(cat2)
+                count.append(counter)
+                counter += 1
+            fig = plt.figure(figsize=(10, 7))
+            plt.title('Tolydinis: ' + cont + ' su kardinaliu: ' + cat)
+            plt.boxplot(df)
+            plt.xlabel(cat)
+            plt.ylabel(cont)
+            plt.xticks(count, titles)
+            plt.show()
+
+
+# ---DUOMENŲ APDOROJIMAS--- #
+
+# Nuskaitomas duomenų failas
 dataset, fields = handler.csv_to_dict_list(c.DATASET_TRAIN_FILE)
 # Sukuriamas išvedimo folderis
 handler.create_package_if_no_exist(c.OUTPUT_FOLDER_NAME)
@@ -239,11 +285,15 @@ final_headers.append('MALICIOUS_OFFENSE')
 # Išvedami pertvarkyti duomenys .csv formatu
 handler.write_to_csv(c.PROCESSED_OUTPUT_PATH, dataset, final_headers)
 
+# ---DIAGRAMŲ BRAIŽYMAS--- #
+
 # # Braižyti histogramas
 # draw_histograms(dataset, final_headers)
 # # Braižyti scatter plot
 # draw_scatters(dataset, list(continuous.keys()))
 # # SPLOM diagramos braižymas
 # draw_splom(dataset, list(continuous.keys()))
-
-draw_barplot(dataset, list(categorical.keys()))
+# # Braižyti histogramas tolydiniams pagal kategorinius atributus
+# draw_histograms_categorical(dataset, list(continuous.keys()), list(categorical.keys()))
+# # Braižyti boxplotus kategoriniams pagal tolydinius atributus
+# draw_boxplot(dataset, list(continuous.keys()), list(categorical.keys()))
