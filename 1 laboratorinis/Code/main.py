@@ -2,7 +2,6 @@
 # Jokubas Akramas IFF-8/12
 # 1 laboratorinis darbas
 # P176B101 Intelektikos pagrindai 2021
-from functools import reduce
 import numpy as np
 import constants as c
 import matplotlib.pyplot as plt
@@ -290,6 +289,7 @@ def normalize_values(data, headers):
         for i in range(len(data)):
             data[i][head] = (float(data[i][head]) - min) / max
 
+
 # ---DUOMENŲ APDOROJIMAS--- #
 
 # Nuskaitomas duomenų failas
@@ -326,27 +326,27 @@ handler.write_to_csv(c.PROCESSED_OUTPUT_PATH, dataset, final_headers)
 
 # ---DIAGRAMŲ BRAIŽYMAS--- #
 
-# # Braižyti histogramas
-# draw_histograms(dataset, final_headers)
-# # Braižyti scatter plot
-# draw_scatters(dataset, list(continuous.keys()))
-# # SPLOM diagramos braižymas
-# draw_splom(dataset, list(continuous.keys()))
-# # Braižyti histogramas tolydiniams pagal kategorinius atributus
-# draw_histograms_categorical(dataset, list(continuous.keys()), list(categorical.keys()))
-# # Braižyti boxplotus kategoriniams pagal tolydinius atributus
-# draw_boxplot(dataset, list(continuous.keys()), list(categorical.keys()))
+# Braižyti histogramas
+draw_histograms(dataset, final_headers)
+# Braižyti scatter plot
+draw_scatters(dataset, list(continuous.keys()))
+# SPLOM diagramos braižymas
+draw_splom(dataset, list(continuous.keys()))
+# Braižyti histogramas tolydiniams pagal kategorinius atributus
+draw_histograms_categorical(dataset, list(continuous.keys()), list(categorical.keys()))
+# Braižyti boxplotus kategoriniams pagal tolydinius atributus
+draw_boxplot(dataset, list(continuous.keys()), list(categorical.keys()))
 
-# # Skaiciuoti kovariacijos ir koreliacijos reiksmes
-# csv_cov, csv_cor = calculate_cov_and_cor(dataset, continuous.keys())
-#
-# final_headers = ['']
-# for i in continuous.keys():
-#     final_headers.append(i)
-#
-# # Išvesti kovariacijos ir koreliacijos matricas į rezultatų failus
-# handler.write_to_csv(c.COVARIANCE_OUTPUT_PATH, csv_cov, final_headers)
-# handler.write_to_csv(c.CORRELATION_OUTPUT_PATH, csv_cor, final_headers)
+# Skaiciuoti kovariacijos ir koreliacijos reiksmes
+csv_cov, csv_cor = calculate_cov_and_cor(dataset, continuous.keys())
+
+final_headers = ['']
+for i in continuous.keys():
+    final_headers.append(i)
+
+# Išvesti kovariacijos ir koreliacijos matricas į rezultatų failus
+handler.write_to_csv(c.COVARIANCE_OUTPUT_PATH, csv_cov, final_headers)
+handler.write_to_csv(c.CORRELATION_OUTPUT_PATH, csv_cor, final_headers)
 
 # Kategorinio tipo kintamieji verciami tolydinio
 convert_cat_to_cont(dataset, categorical.keys())
