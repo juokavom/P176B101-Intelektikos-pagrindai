@@ -184,7 +184,30 @@ def draw_splom(df, headers):
     fig.show()
 
 
-# Nuskaitomas duomenų failas
+def draw_barplot(data, headers):
+
+    for head in range(len(headers)):
+        sublist = list(map(lambda x: x[headers[head]], data))
+        categories = list(set(sublist))
+        for cat in categories:
+            for head2 in range(len(headers)):
+                if head == head2:
+                    continue
+                sublist2 = list(map(lambda x: x[headers[head2]] if x[headers[head]] == cat else '', data))
+                sublist2_unique = list(set(sublist2))
+                sublist2_unique.remove('')
+                sublist2_counts = list(map(lambda x: len(list(filter(lambda y: y == x, sublist2))), sublist2_unique))
+                fig = plt.figure()
+                # creating the bar plot
+                plt.bar(sublist2_unique, sublist2_counts)
+
+                plt.xlabel(headers[head2])
+                # plt.ylabel("No. ")
+                plt.title('Atributas: ' + headers[head] + '. Pasirinkimas: ' + cat)
+                plt.show()
+
+
+            # Nuskaitomas duomenų failas
 dataset, fields = handler.csv_to_dict_list(c.DATASET_TRAIN_FILE)
 # Sukuriamas išvedimo folderis
 handler.create_package_if_no_exist(c.OUTPUT_FOLDER_NAME)
@@ -220,5 +243,7 @@ handler.write_to_csv(c.PROCESSED_OUTPUT_PATH, dataset, final_headers)
 # draw_histograms(dataset, final_headers)
 # # Braižyti scatter plot
 # draw_scatters(dataset, list(continuous.keys()))
-# SPLOM diagramos braižymas
-draw_splom(dataset, list(continuous.keys()))
+# # SPLOM diagramos braižymas
+# draw_splom(dataset, list(continuous.keys()))
+
+draw_barplot(dataset, list(categorical.keys()))
