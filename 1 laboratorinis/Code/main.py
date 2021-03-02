@@ -137,10 +137,17 @@ def handle_missing_values(data, continuous, continuous_headers, categorical, cat
                      0.6)  # Vertikalus šalinimas (jei 60% stulpelio tuščia)
 
 
-def draw_histograms(data, headers):
+def draw_histograms(data, continuous_headers, categorical_headers):
     n = round(1 + 3.22 * np.log(len(data)))
-    for head in headers:
+    for head in categorical_headers:
         sublist = list(map(lambda x: x[head], data))
+        sublist.sort()
+        plt.title(head)
+        plt.hist(sublist, bins=n)
+        plt.show()
+    for head in continuous_headers:
+        sublist = list(map(lambda x: float(x[head]), data))
+        sublist.sort()
         plt.title(head)
         plt.hist(sublist, bins=n)
         plt.show()
@@ -327,7 +334,7 @@ handler.write_to_csv(c.PROCESSED_OUTPUT_PATH, dataset, final_headers)
 # ---DIAGRAMŲ BRAIŽYMAS--- #
 
 # Braižyti histogramas
-draw_histograms(dataset, final_headers)
+draw_histograms(dataset, continuous.keys(), categorical.keys())
 # Braižyti scatter plot
 draw_scatters(dataset, list(continuous.keys()))
 # SPLOM diagramos braižymas
