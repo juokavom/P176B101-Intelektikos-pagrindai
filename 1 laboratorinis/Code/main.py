@@ -207,8 +207,8 @@ def draw_barplot(data, headers):
                 plt.bar(sublist2_unique, sublist2_counts)
 
                 plt.xlabel(headers[head2])
-                # plt.ylabel("No. ")
-                plt.title('Atributas: ' + headers[head] + '. Pasirinkimas: ' + cat)
+                plt.ylabel(headers[head])
+                plt.title('Atributas: ' + headers[head] + ': ' + cat)
                 plt.show()
 
 
@@ -339,6 +339,8 @@ draw_histograms(dataset, continuous.keys(), categorical.keys())
 draw_scatters(dataset, list(continuous.keys()))
 # SPLOM diagramos braižymas
 draw_splom(dataset, list(continuous.keys()))
+# Braižoma kategorinių atributų priklausomybė
+draw_barplot(dataset, list(categorical.keys()))
 # Braižyti histogramas tolydiniams pagal kategorinius atributus
 draw_histograms_categorical(dataset, list(continuous.keys()), list(categorical.keys()))
 # Braižyti boxplotus kategoriniams pagal tolydinius atributus
