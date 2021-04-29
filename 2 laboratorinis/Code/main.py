@@ -24,10 +24,10 @@ MODULE_SCORE['Prastas'] = fuzz.trapmf(MODULE_SCORE.universe, [1, 1, 5, 6])
 MODULE_SCORE['Pažangus'] = fuzz.trapmf(MODULE_SCORE.universe, [5, 6, 7, 8])
 MODULE_SCORE['Puikus'] = fuzz.trapmf(MODULE_SCORE.universe, [7, 8, 10, 10])
 
-module_rating.view()
-attendance.view()
-party_days.view()
-MODULE_SCORE.view()
+# module_rating.view()
+# attendance.view()
+# party_days.view()
+# MODULE_SCORE.view()
 
 rules = [
     ctrl.Rule(module_rating['Lengvas'] | party_days['Beveik neegzistuojančios'], MODULE_SCORE['Puikus']),
@@ -64,9 +64,14 @@ score = ctrl.ControlSystemSimulation(module_score_ctrl)
 # score.input['Vakarėlių dienos (d.)'] = 5
 
 # Trečias testas (5.49)
-score.input['Modulio vertinimas (bal.)'] = 4
-score.input['Lankomumas (%)'] = 48
-score.input['Vakarėlių dienos (d.)'] = 3
+# score.input['Modulio vertinimas (bal.)'] = 4
+# score.input['Lankomumas (%)'] = 48
+# score.input['Vakarėlių dienos (d.)'] = 3
+
+# Testo template
+score.input['Modulio vertinimas (bal.)'] = 2
+score.input['Lankomumas (%)'] = 80
+score.input['Vakarėlių dienos (d.)'] = 1
 
 score.compute()
 
