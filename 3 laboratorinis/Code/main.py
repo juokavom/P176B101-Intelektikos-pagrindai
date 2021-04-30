@@ -1,13 +1,11 @@
 # Jokubas Akramas
 # IFF-8/12
-# 2021-04-29
+# 2021-04-30
 from functools import reduce
-import numpy as np
 import matplotlib.pyplot as plt
 import sys
 from mpl_toolkits.mplot3d import Axes3D
 from sklearn.linear_model import LinearRegression
-import math
 
 # 2. Užkrauti failo turinį į darbinę atmintį.
 (years, spots) = zip(*[x.split('\n')[0].split('\t') for x in open('sunspot.txt').readlines()])
@@ -30,12 +28,12 @@ def validate_input_data(data, min_val, max_val):
 years_valid = validate_input_data(years, 1700, 2021)
 spots_valid = validate_input_data(spots, 0, 1000)
 
-print("Metai atitinka validacija"
+print("Metai atitinka validaciją"
       if years_valid
       else "Metai neatitinka validacijos")
-print("Saules dienu aktyvumas atitinka validacija"
+print("Saules dėmių aktyvumas atitinka validaciją"
       if spots_valid
-      else "Saules dienu aktyvumas neatitinka validacijos")
+      else "Saules dėmių aktyvumas neatitinka validacijos")
 
 if not years_valid or not spots_valid:
     sys.exit(-1)
@@ -55,20 +53,21 @@ years = list(map(lambda x: int(x), years))
 spots = list(map(lambda x: int(x), spots))
 
 
-# TODO ijungti piesima
+# TODO ijungt
 # draw_plot_2d(years, spots, 'Saulės dienų aktyvumas pagal metus', 'Metai', 'Saulės aktyvumo dienos')
 
-# Normalizavimas
+
+# Normalizavimas [-1; 1]
 def normalize(data, min_value, delta):
     return [2 * (x - min_value) / delta - 1 for x in data]
 
 
-# TODO perdaryt 0;1 reziams
 # Anti normalizavimas
 def unnormalize(data, min_value, delta):
     return [((x + 1) * delta) / 2 + min_value for x in data]
 
 
+# Normalizacija
 # spots_min = min(spots)
 # spots_delta = max(spots) - spots_min
 # spots = normalize(spots, spots_min, spots_delta)
@@ -81,7 +80,7 @@ def unnormalize(data, min_value, delta):
 def form_matrix(n, data):
     p = [[data[u] for u in range(i - n, i)] for i in range(n, len(data))]
     t = data[n:]
-    # TODO ijungti loginima
+    # TODO ijungt
     # print('Suformuotos matricos P[,] = T[]')
     # for i in range(len(p)):
     #     print(p[i], ' = ', t[i])
@@ -113,7 +112,8 @@ if len(P[0]) == 2:
     (P1, P2) = zip(*P)
     P1 = list(P1)
     P2 = list(P2)
-    draw_plot_3d(P1, P2, T, 'Koreliacijos grafikas', 'w1', 'w2', 'b')
+    # TODO ijungt
+    # draw_plot_3d(P1, P2, T, 'Koreliacijos grafikas', 'w1', 'w2', 'b')
 
 # 7. Išskirkime iš įvesties P ir išvesties T duomenų rinkinių fragmentus, turinčius po 200 pradžioje esamų
 # duomenų – taip vadinamą apmokymo duomenų rinkinį. Remiantis šiuo rinkiniu apskaičiuosime
@@ -121,9 +121,9 @@ if len(P[0]) == 2:
 # duomenys bus panaudoti modeliui verifikuoti. Tuomet, panaudojant jau esamas P ir T matricas,
 # apibrėžkime dvi naujas – Pu ir Tu, kurios turės pirmus 200 duomenų.
 
-# ----------------------------------------------------------
-# Bandziau pats realizuoti, taciau neduota tiksliu rezultatu
-# ----------------------------------------------------------
+# --------------------------------------------------------------------------
+# Bandziau pats realizuoti, taciau neduota tiksliu rezultatu - J.A.21/04/30
+# --------------------------------------------------------------------------
 # def linear_regression_calculation(x, w, b):
 #     for i in range(len(x)):
 #         b += x[i] * w[i]
@@ -159,7 +159,7 @@ if len(P[0]) == 2:
 #     print('Weights not found!')
 #     sys.exit(-1)
 #
-# ----------------------------------------------------------
+# ------------------------------------------------------------------------
 
 Pu = P[:200]
 Tu = T[:200]
@@ -172,6 +172,7 @@ model = LinearRegression().fit(Pu, Tu)
 print('Svoriai (w[]) = ', model.coef_)
 print('Poslinkis (b) = ', model.intercept_)
 
+
 # 10. Sekančiame žingsnyje atliksime modelio verifikaciją – t.y. patikrinsime prognozavimo kokybę
 # atliekant modelio veikimo imitaciją. Pradžioje tai atliksime su apmokymo duomenų rinkiniu, kuris
 # buvo panaudotas svorio koeficientams apskaičiuoti.
@@ -182,6 +183,48 @@ print('Poslinkis (b) = ', model.intercept_)
 # Kadangi turime tikrąsias dėmių aktyvumo reikšmes nagrinėjamu laiko periodu (Tu), jas galime
 # patikrinti su prognozuojamomis reikšmėmis (Tsu). Gautame grafike vaizdavimai turi būti
 # paženklinti skirtingomis spalvomis bei turėti legendą.
+def draw_2_plot_2d(x, y1, y2, title, x_title, y_title, y1_title, y2_title):
+    fig, ax = plt.subplots()
+    ax.plot(x, y1, label=y1_title)
+    ax.plot(x, y2, label=y2_title)
+    legend = ax.legend()
+    plt.title(title)
+    plt.xlabel(x_title)
+    plt.ylabel(y_title)
+    plt.show()
+
+
+Yu = years[:len(Pu)]
+Tsu = model.predict(Pu)
+# TODO ijungt
+# draw_2_plot_2d(Yu, Tu, Tsu, 'Modelio verifikacija (apmokoma sritis)',
+#                'Metai', 'Aktyvios saulės dėmės', 'Tikros reikšmės', 'Prognozuojamos reikšmės')
+
 # Modelio verifikaciją taip pat atlikite su nematytu duomenų rinkiniu – testavimo rinkiniu, t.y. su
 # duomenimis nuo 201 eilutės. Bei sukurkite analogiškus grafikus vaizduojant Tu ir Tsu reikšmes.
+Pu_test = P[200:]
+Tu_test = T[200:]
+Tsu_test = model.predict(Pu_test)
+# TODO ijungt
+# draw_2_plot_2d(Yu, Tu, Tsu, 'Modelio verifikacija (testavimo sritis)',
+#                'Metai', 'Aktyvios saulės dėmės', 'Tikros reikšmės', 'Prognozuojamos reikšmės')
 
+# 11. Sukurti prognozės klaidos vektorių e (žr. išraiškos 1.2 paaiškinimą). Nubraižyti prognozės klaidos
+# grafiką. Aprašyti jo ašis ir suteikti pavadinimą.
+Tsu_all = model.predict(P)
+e = [Tsu_all[i] - T[i] for i in range(len(Tsu_all))]
+# TODO ijungt
+# draw_plot_2d(years[len(P[0]):], e, 'Prognozės klaidos grafikas', 'Metai', 'Klaidos dydis')
+
+
+# 12. Nubraižyti prognozės klaidų histogramą (hist). Ją pakomentuokite.
+def draw_histogram(x, title, x_title, y_title):
+    fig, axs = plt.subplots()
+    axs.hist(x)
+    plt.title(title)
+    plt.xlabel(x_title)
+    plt.ylabel(y_title)
+    plt.show()
+
+# TODO ijungt
+# draw_histogram(e, 'Prognozės klaidų histograma', 'Klaidos dydis', 'Kartai')
